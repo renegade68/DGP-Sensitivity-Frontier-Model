@@ -1,0 +1,3556 @@
+{
+  "primary_method_pairs": [
+    [
+      "EAT",
+      "FDH"
+    ],
+    [
+      "CEAT",
+      "DEA_VRS"
+    ],
+    [
+      "SVF_PAPER",
+      "DEA_VRS"
+    ],
+    [
+      "CEAT",
+      "EAT"
+    ],
+    [
+      "SVF_PAPER",
+      "EAT"
+    ],
+    [
+      "SVF_PAPER",
+      "CEAT"
+    ],
+    [
+      "EAT",
+      "SFA_CD_HN"
+    ],
+    [
+      "EAT",
+      "SFA_TL_HN"
+    ],
+    [
+      "EAT",
+      "SFA_CD_EXP"
+    ],
+    [
+      "EAT",
+      "SFA_TL_EXP"
+    ],
+    [
+      "EAT",
+      "StoNED_QLE"
+    ],
+    [
+      "CEAT",
+      "SFA_CD_HN"
+    ],
+    [
+      "CEAT",
+      "SFA_TL_HN"
+    ],
+    [
+      "CEAT",
+      "SFA_CD_EXP"
+    ],
+    [
+      "CEAT",
+      "SFA_TL_EXP"
+    ],
+    [
+      "CEAT",
+      "StoNED_QLE"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_CD_HN"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_TL_HN"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_CD_EXP"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_TL_EXP"
+    ],
+    [
+      "SVF_PAPER",
+      "StoNED_QLE"
+    ]
+  ],
+  "factor_contrasts": [
+    {
+      "contrast_id": "F0001",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D02",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0002",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D03",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0003",
+      "kind": "P1_scale",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0004",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D07",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0005",
+      "kind": "P1_function",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D17",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0006",
+      "kind": "P1_function",
+      "A_cell": "U1_D01",
+      "B_cell": "U1_D33",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0007",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D02",
+      "B_cell": "U1_D03",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0008",
+      "kind": "P1_scale",
+      "A_cell": "U1_D02",
+      "B_cell": "U1_D05",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0009",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D02",
+      "B_cell": "U1_D08",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0010",
+      "kind": "P1_function",
+      "A_cell": "U1_D02",
+      "B_cell": "U1_D18",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0011",
+      "kind": "P1_function",
+      "A_cell": "U1_D02",
+      "B_cell": "U1_D34",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0012",
+      "kind": "P1_scale",
+      "A_cell": "U1_D03",
+      "B_cell": "U1_D06",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0013",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D03",
+      "B_cell": "U1_D09",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0014",
+      "kind": "P1_function",
+      "A_cell": "U1_D03",
+      "B_cell": "U1_D19",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0015",
+      "kind": "P1_function",
+      "A_cell": "U1_D03",
+      "B_cell": "U1_D35",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0016",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D04",
+      "B_cell": "U1_D05",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0017",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D04",
+      "B_cell": "U1_D06",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0018",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D04",
+      "B_cell": "U1_D10",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0019",
+      "kind": "P1_function",
+      "A_cell": "U1_D04",
+      "B_cell": "U1_D20",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0020",
+      "kind": "P1_function",
+      "A_cell": "U1_D04",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0021",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D05",
+      "B_cell": "U1_D06",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0022",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D05",
+      "B_cell": "U1_D11",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0023",
+      "kind": "P1_function",
+      "A_cell": "U1_D05",
+      "B_cell": "U1_D21",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0024",
+      "kind": "P1_function",
+      "A_cell": "U1_D05",
+      "B_cell": "U1_D37",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0025",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D06",
+      "B_cell": "U1_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0026",
+      "kind": "P1_function",
+      "A_cell": "U1_D06",
+      "B_cell": "U1_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0027",
+      "kind": "P1_function",
+      "A_cell": "U1_D06",
+      "B_cell": "U1_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0028",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D07",
+      "B_cell": "U1_D08",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0029",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D07",
+      "B_cell": "U1_D09",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0030",
+      "kind": "P1_scale",
+      "A_cell": "U1_D07",
+      "B_cell": "U1_D10",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0031",
+      "kind": "P1_function",
+      "A_cell": "U1_D07",
+      "B_cell": "U1_D23",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0032",
+      "kind": "P1_function",
+      "A_cell": "U1_D07",
+      "B_cell": "U1_D39",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0033",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D08",
+      "B_cell": "U1_D09",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0034",
+      "kind": "P1_scale",
+      "A_cell": "U1_D08",
+      "B_cell": "U1_D11",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0035",
+      "kind": "P1_function",
+      "A_cell": "U1_D08",
+      "B_cell": "U1_D24",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0036",
+      "kind": "P1_function",
+      "A_cell": "U1_D08",
+      "B_cell": "U1_D40",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0037",
+      "kind": "P1_scale",
+      "A_cell": "U1_D09",
+      "B_cell": "U1_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0038",
+      "kind": "P1_function",
+      "A_cell": "U1_D09",
+      "B_cell": "U1_D25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0039",
+      "kind": "P1_function",
+      "A_cell": "U1_D09",
+      "B_cell": "U1_D41",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0040",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D10",
+      "B_cell": "U1_D11",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0041",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D10",
+      "B_cell": "U1_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0042",
+      "kind": "P1_function",
+      "A_cell": "U1_D10",
+      "B_cell": "U1_D26",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0043",
+      "kind": "P1_function",
+      "A_cell": "U1_D10",
+      "B_cell": "U1_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0044",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D11",
+      "B_cell": "U1_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0045",
+      "kind": "P1_function",
+      "A_cell": "U1_D11",
+      "B_cell": "U1_D27",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0046",
+      "kind": "P1_function",
+      "A_cell": "U1_D11",
+      "B_cell": "U1_D43",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0047",
+      "kind": "P1_function",
+      "A_cell": "U1_D12",
+      "B_cell": "U1_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0048",
+      "kind": "P1_function",
+      "A_cell": "U1_D12",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0049",
+      "kind": "P1_function",
+      "A_cell": "U1_D13",
+      "B_cell": "U1_D29",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0050",
+      "kind": "P1_function",
+      "A_cell": "U1_D13",
+      "B_cell": "U1_D45",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0051",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D14",
+      "B_cell": "U1_D15",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0052",
+      "kind": "P1_function",
+      "A_cell": "U1_D14",
+      "B_cell": "U1_D30",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0053",
+      "kind": "P1_function",
+      "A_cell": "U1_D14",
+      "B_cell": "U1_D46",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0054",
+      "kind": "P1_function",
+      "A_cell": "U1_D15",
+      "B_cell": "U1_D31",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0055",
+      "kind": "P1_function",
+      "A_cell": "U1_D15",
+      "B_cell": "U1_D47",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0056",
+      "kind": "P1_function",
+      "A_cell": "U1_D16",
+      "B_cell": "U1_D32",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0057",
+      "kind": "P1_function",
+      "A_cell": "U1_D16",
+      "B_cell": "U1_D48",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0058",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D17",
+      "B_cell": "U1_D18",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0059",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D17",
+      "B_cell": "U1_D19",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0060",
+      "kind": "P1_scale",
+      "A_cell": "U1_D17",
+      "B_cell": "U1_D20",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0061",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D17",
+      "B_cell": "U1_D23",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0062",
+      "kind": "P1_function",
+      "A_cell": "U1_D17",
+      "B_cell": "U1_D33",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0063",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D18",
+      "B_cell": "U1_D19",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0064",
+      "kind": "P1_scale",
+      "A_cell": "U1_D18",
+      "B_cell": "U1_D21",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0065",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D18",
+      "B_cell": "U1_D24",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0066",
+      "kind": "P1_function",
+      "A_cell": "U1_D18",
+      "B_cell": "U1_D34",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0067",
+      "kind": "P1_scale",
+      "A_cell": "U1_D19",
+      "B_cell": "U1_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0068",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D19",
+      "B_cell": "U1_D25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0069",
+      "kind": "P1_function",
+      "A_cell": "U1_D19",
+      "B_cell": "U1_D35",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0070",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D20",
+      "B_cell": "U1_D21",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0071",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D20",
+      "B_cell": "U1_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0072",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D20",
+      "B_cell": "U1_D26",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0073",
+      "kind": "P1_function",
+      "A_cell": "U1_D20",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0074",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D21",
+      "B_cell": "U1_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0075",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D21",
+      "B_cell": "U1_D27",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0076",
+      "kind": "P1_function",
+      "A_cell": "U1_D21",
+      "B_cell": "U1_D37",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0077",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D22",
+      "B_cell": "U1_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0078",
+      "kind": "P1_function",
+      "A_cell": "U1_D22",
+      "B_cell": "U1_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0079",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D23",
+      "B_cell": "U1_D24",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0080",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D23",
+      "B_cell": "U1_D25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0081",
+      "kind": "P1_scale",
+      "A_cell": "U1_D23",
+      "B_cell": "U1_D26",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0082",
+      "kind": "P1_function",
+      "A_cell": "U1_D23",
+      "B_cell": "U1_D39",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0083",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D24",
+      "B_cell": "U1_D25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0084",
+      "kind": "P1_scale",
+      "A_cell": "U1_D24",
+      "B_cell": "U1_D27",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0085",
+      "kind": "P1_function",
+      "A_cell": "U1_D24",
+      "B_cell": "U1_D40",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0086",
+      "kind": "P1_scale",
+      "A_cell": "U1_D25",
+      "B_cell": "U1_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0087",
+      "kind": "P1_function",
+      "A_cell": "U1_D25",
+      "B_cell": "U1_D41",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0088",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D26",
+      "B_cell": "U1_D27",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0089",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D26",
+      "B_cell": "U1_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0090",
+      "kind": "P1_function",
+      "A_cell": "U1_D26",
+      "B_cell": "U1_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0091",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D27",
+      "B_cell": "U1_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0092",
+      "kind": "P1_function",
+      "A_cell": "U1_D27",
+      "B_cell": "U1_D43",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0093",
+      "kind": "P1_function",
+      "A_cell": "U1_D28",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0094",
+      "kind": "P1_function",
+      "A_cell": "U1_D29",
+      "B_cell": "U1_D45",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0095",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D30",
+      "B_cell": "U1_D31",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0096",
+      "kind": "P1_function",
+      "A_cell": "U1_D30",
+      "B_cell": "U1_D46",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0097",
+      "kind": "P1_function",
+      "A_cell": "U1_D31",
+      "B_cell": "U1_D47",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0098",
+      "kind": "P1_function",
+      "A_cell": "U1_D32",
+      "B_cell": "U1_D48",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0099",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D33",
+      "B_cell": "U1_D34",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0100",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D33",
+      "B_cell": "U1_D35",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0101",
+      "kind": "P1_scale",
+      "A_cell": "U1_D33",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0102",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D33",
+      "B_cell": "U1_D39",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0103",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D34",
+      "B_cell": "U1_D35",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0104",
+      "kind": "P1_scale",
+      "A_cell": "U1_D34",
+      "B_cell": "U1_D37",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0105",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D34",
+      "B_cell": "U1_D40",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0106",
+      "kind": "P1_scale",
+      "A_cell": "U1_D35",
+      "B_cell": "U1_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0107",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D35",
+      "B_cell": "U1_D41",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0108",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D36",
+      "B_cell": "U1_D37",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0109",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D36",
+      "B_cell": "U1_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0110",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D36",
+      "B_cell": "U1_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0111",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D37",
+      "B_cell": "U1_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0112",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D37",
+      "B_cell": "U1_D43",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0113",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D38",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0114",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D39",
+      "B_cell": "U1_D40",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0115",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D39",
+      "B_cell": "U1_D41",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0116",
+      "kind": "P1_scale",
+      "A_cell": "U1_D39",
+      "B_cell": "U1_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0117",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D40",
+      "B_cell": "U1_D41",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0118",
+      "kind": "P1_scale",
+      "A_cell": "U1_D40",
+      "B_cell": "U1_D43",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0119",
+      "kind": "P1_scale",
+      "A_cell": "U1_D41",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0120",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D42",
+      "B_cell": "U1_D43",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0121",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D42",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": [
+        1,
+        500
+      ],
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0122",
+      "kind": "P1_ratio",
+      "A_cell": "U1_D43",
+      "B_cell": "U1_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0123",
+      "kind": "P1_actual_SD_distribution",
+      "A_cell": "U1_D46",
+      "B_cell": "U1_D47",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0124",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D04",
+      "B_cell": "U5_m3_n100_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0125",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D04",
+      "B_cell": "U5_m5_n50_D04",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0126",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D06",
+      "B_cell": "U5_m3_n100_D06",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0127",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D06",
+      "B_cell": "U5_m5_n50_D06",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0128",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D10",
+      "B_cell": "U5_m3_n100_D10",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0129",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D10",
+      "B_cell": "U5_m5_n50_D10",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0130",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D12",
+      "B_cell": "U5_m3_n100_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0131",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D12",
+      "B_cell": "U5_m5_n50_D12",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0132",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D20",
+      "B_cell": "U5_m3_n100_D20",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0133",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D20",
+      "B_cell": "U5_m5_n50_D20",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0134",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D22",
+      "B_cell": "U5_m3_n100_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0135",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D22",
+      "B_cell": "U5_m5_n50_D22",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0136",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D26",
+      "B_cell": "U5_m3_n100_D26",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0137",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D26",
+      "B_cell": "U5_m5_n50_D26",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0138",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D28",
+      "B_cell": "U5_m3_n100_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0139",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D28",
+      "B_cell": "U5_m5_n50_D28",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0140",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D36",
+      "B_cell": "U5_m3_n100_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0141",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D36",
+      "B_cell": "U5_m5_n50_D36",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0142",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D38",
+      "B_cell": "U5_m3_n100_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0143",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D38",
+      "B_cell": "U5_m5_n50_D38",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0144",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D42",
+      "B_cell": "U5_m3_n100_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0145",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D42",
+      "B_cell": "U5_m5_n50_D42",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0146",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U1_D44",
+      "B_cell": "U5_m3_n100_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0147",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U1_D44",
+      "B_cell": "U5_m5_n50_D44",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0148",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D04",
+      "B_cell": "U5_m5_n100_D04",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0149",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D06",
+      "B_cell": "U5_m5_n100_D06",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0150",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D10",
+      "B_cell": "U5_m5_n100_D10",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0151",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D12",
+      "B_cell": "U5_m5_n100_D12",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0152",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D20",
+      "B_cell": "U5_m5_n100_D20",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0153",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D22",
+      "B_cell": "U5_m5_n100_D22",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0154",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D26",
+      "B_cell": "U5_m5_n100_D26",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0155",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D28",
+      "B_cell": "U5_m5_n100_D28",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0156",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D36",
+      "B_cell": "U5_m5_n100_D36",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0157",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D38",
+      "B_cell": "U5_m5_n100_D38",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0158",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D42",
+      "B_cell": "U5_m5_n100_D42",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0159",
+      "kind": "P1_P3_dimension",
+      "A_cell": "U5_m3_n100_D44",
+      "B_cell": "U5_m5_n100_D44",
+      "difference": "A minus B",
+      "paired": false,
+      "reason": "independent RNG streams; same rep ID does not imply pairing",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "separate dimension-specific domains; not a common coordinate-space risk"
+    },
+    {
+      "contrast_id": "F0160",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D04",
+      "B_cell": "U5_m5_n50_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0161",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D06",
+      "B_cell": "U5_m5_n50_D06",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0162",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D10",
+      "B_cell": "U5_m5_n50_D10",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0163",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D12",
+      "B_cell": "U5_m5_n50_D12",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0164",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D20",
+      "B_cell": "U5_m5_n50_D20",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0165",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D22",
+      "B_cell": "U5_m5_n50_D22",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0166",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D26",
+      "B_cell": "U5_m5_n50_D26",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0167",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D28",
+      "B_cell": "U5_m5_n50_D28",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0168",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D36",
+      "B_cell": "U5_m5_n50_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0169",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D38",
+      "B_cell": "U5_m5_n50_D38",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0170",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D42",
+      "B_cell": "U5_m5_n50_D42",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0171",
+      "kind": "P1_P3_sample_size",
+      "A_cell": "U5_m5_n100_D44",
+      "B_cell": "U5_m5_n50_D44",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0172",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D49",
+      "B_cell": "U1_D50",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0173",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D49",
+      "B_cell": "U1_D51",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0174",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D49",
+      "B_cell": "U1_D52",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0175",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D49",
+      "B_cell": "U1_D55",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0176",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D50",
+      "B_cell": "U1_D51",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0177",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D50",
+      "B_cell": "U1_D53",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0178",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D50",
+      "B_cell": "U1_D56",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0179",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D51",
+      "B_cell": "U1_D54",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0180",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D51",
+      "B_cell": "U1_D57",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0181",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D52",
+      "B_cell": "U1_D53",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0182",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D52",
+      "B_cell": "U1_D54",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0183",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D52",
+      "B_cell": "U1_D55",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0184",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D53",
+      "B_cell": "U1_D54",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0185",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D53",
+      "B_cell": "U1_D56",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0186",
+      "kind": "P2_SVF_bridge_sample_size",
+      "A_cell": "U1_D54",
+      "B_cell": "U1_D57",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0187",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D55",
+      "B_cell": "U1_D56",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0188",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D55",
+      "B_cell": "U1_D57",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0189",
+      "kind": "P2_SVF_bridge_noise",
+      "A_cell": "U1_D56",
+      "B_cell": "U1_D57",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0190",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U3_m5_n50_baseline",
+      "B_cell": "U3_m5_n50_noise_equal",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0191",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U3_m5_n50_baseline",
+      "B_cell": "U3_m5_n50_noise_half",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0192",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_baseline",
+      "B_cell": "U4_m5_n50_baseline_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0193",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_baseline",
+      "B_cell": "U4_m5_n50_baseline_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0194",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U3_m5_n50_noise_equal",
+      "B_cell": "U3_m5_n50_noise_half",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0195",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_noise_equal",
+      "B_cell": "U4_m5_n50_noise_equal_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0196",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_noise_equal",
+      "B_cell": "U4_m5_n50_noise_equal_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0197",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_noise_half",
+      "B_cell": "U4_m5_n50_noise_half_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0198",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U3_m5_n50_noise_half",
+      "B_cell": "U4_m5_n50_noise_half_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0199",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U4_m5_n50_baseline_a0p25",
+      "B_cell": "U4_m5_n50_baseline_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0200",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_baseline_a0p25",
+      "B_cell": "U4_m5_n50_noise_equal_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0201",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_baseline_a0p25",
+      "B_cell": "U4_m5_n50_noise_half_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0202",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_baseline_a0p5",
+      "B_cell": "U4_m5_n50_noise_equal_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0203",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_baseline_a0p5",
+      "B_cell": "U4_m5_n50_noise_half_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0204",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U4_m5_n50_noise_equal_a0p25",
+      "B_cell": "U4_m5_n50_noise_equal_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0205",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_noise_equal_a0p25",
+      "B_cell": "U4_m5_n50_noise_half_a0p25",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0206",
+      "kind": "P4_interaction_noise",
+      "A_cell": "U4_m5_n50_noise_equal_a0p5",
+      "B_cell": "U4_m5_n50_noise_half_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0207",
+      "kind": "P4_interaction_alpha",
+      "A_cell": "U4_m5_n50_noise_half_a0p25",
+      "B_cell": "U4_m5_n50_noise_half_a0p5",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0208",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_sixth",
+      "B_cell": "DB_m3_n50_v_third",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0209",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_sixth",
+      "B_cell": "DB_m3_n50_v_two_thirds",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0210",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_sixth",
+      "B_cell": "DB_m3_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0211",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_third",
+      "B_cell": "DB_m3_n50_v_two_thirds",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0212",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_third",
+      "B_cell": "DB_m3_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0213",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m3_n50_v_two_thirds",
+      "B_cell": "DB_m3_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0214",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_sixth",
+      "B_cell": "DB_m5_n50_v_third",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0215",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_sixth",
+      "B_cell": "DB_m5_n50_v_two_thirds",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0216",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_sixth",
+      "B_cell": "DB_m5_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0217",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_third",
+      "B_cell": "DB_m5_n50_v_two_thirds",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0218",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_third",
+      "B_cell": "DB_m5_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0219",
+      "kind": "P5_DEAM_function_bridge_noise",
+      "A_cell": "DB_m5_n50_v_two_thirds",
+      "B_cell": "DB_m5_n50_v_zero",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0220",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "U3_m5_n50_noise_equal_level",
+      "B_cell": "U3_m5_n50_noise_equal",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0221",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D04_input_correlation",
+      "B_cell": "U1_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0222",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D04_noise_heteroskedasticity",
+      "B_cell": "U1_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0223",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D04_noise_gaussian_mixture",
+      "B_cell": "U1_D04",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0224",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D36_input_correlation",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0225",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D36_noise_heteroskedasticity",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    },
+    {
+      "contrast_id": "F0226",
+      "kind": "P6_stress_minus_anchor",
+      "A_cell": "REVIEW_U1_D36_noise_gaussian_mixture",
+      "B_cell": "U1_D36",
+      "difference": "A minus B",
+      "paired": true,
+      "reason": "verified shared underlying draws",
+      "base_reps": [
+        1,
+        200
+      ],
+      "precision_reps": null,
+      "frontier_domain": "evaluation-mask intersection on identical fixed points"
+    }
+  ],
+  "factor_targets": "each model and each of 21 ML-reference loss gaps; identical availability and domain within each contrast",
+  "native_comparison_mapping": "deterministic native uses common_raw source metric; stochastic uses BC or exp(JLMS), score types explicitly labeled",
+  "precision_policy": "base ID1..200; separate R500 precision tables only for 12 declared cells; both cells R500 required for factor precision",
+  "integration_policy": "Primary native BC/JLMS requires identified decomposition; degenerate TE=1 convention retained in separate limit views; valid limiting frontier/common_raw remains available."
+}

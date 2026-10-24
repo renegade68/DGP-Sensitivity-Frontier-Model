@@ -1,0 +1,89 @@
+{
+  "variant": "sfa_centered_HN_boundary_v3_stoned_log_ratio_profile_v4",
+  "purpose": "Equivalent HN boundary QP residual centering/scaling; retain original estimation targets and all numeric qualification thresholds",
+  "models": [
+    "SFA_CD_HN",
+    "SFA_CD_EXP",
+    "SFA_TL_HN",
+    "SFA_TL_EXP",
+    "StoNED_QLE"
+  ],
+  "scope": {
+    "conditions": 117,
+    "datasets": 27000,
+    "models": 10
+  },
+  "software": {
+    "SFA_baseline": "unmodified sfaR 1.0.1 BFGS",
+    "SFA_corrected": "equivalent stable HN/EXP likelihood; public SciPy L-BFGS-B/BFGS and HiGHS/Clarabel boundary subproblems",
+    "StoNED": "unmodified pyStoNED 0.7.5 CNLS/IPOPT model plus explicit constrained QLE and stable conditional-score adapter"
+  },
+  "sfa": {
+    "rho_grid": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9,
+      0.99,
+      0.999
+    ],
+    "rho_definition": "sigma_u / hypot(sigma_u,sigma_v)",
+    "joint_starts": "profile endpoints, every grid local likelihood maximum, and fresh sfaR baseline",
+    "log_scale_search_radius": 12,
+    "log_lambda_search_bounds": [
+      -25,
+      25
+    ],
+    "max_iterations": 2000,
+    "gradient_per_observation_tolerance": 0.0001,
+    "scaled_gradient_tolerance": 1e-05,
+    "curvature_relative_tolerance": 1e-06,
+    "boundary_KKT_tolerance": 1e-07,
+    "likelihood_tie_per_observation": 1e-08,
+    "degenerate_OLS_threshold": "128*machine_epsilon*max(n,K)*max(1,max(abs(log(y))))",
+    "boundaries": [
+      "sigma_u=0 Gaussian OLS",
+      "sigma_v=0 constrained HN QP or EXP LP"
+    ],
+    "global_maximum_claim": false,
+    "HN_boundary_coordinates": "OLS-centered residual-RMS-normalized QR coordinates; recover original coefficients and duals before unchanged KKT checks"
+  },
+  "stoned": {
+    "CNLS_tolerance": 1e-10,
+    "CNLS_tight_tolerance": 1e-12,
+    "CNLS_starts": [
+      0.8,
+      1.2
+    ],
+    "CNLS_max_iterations": 2000,
+    "CNLS_max_cpu_seconds_per_start": 120,
+    "CNLS_constraint_tolerance": 1e-05,
+    "near_zero_residual_screen": "RMS <= sqrt(machine_epsilon)*max(1,sd(log(y)))",
+    "degenerate_rule": "near-zero screen plus tighter two-start CNLS; tight RMS <= threshold and <= 0.1*base RMS; otherwise unresolved numerical classification",
+    "QLE_profile_grid": 4001,
+    "QLE_check_grid": 8001,
+    "QLE_tie_per_observation": 1e-10,
+    "QLE_profile_agreement_per_observation": 1e-08,
+    "QLE_parameter_domain": "rho in [0,1], with exact endpoint evaluation; no negative variance and no clipping",
+    "conditional_score": "stable exact Mills-ratio formula without additive denominator constant",
+    "CNLS_global_maximum_claim": false,
+    "QLE_coordinate": "log(sigma_v/sigma_u)",
+    "QLE_log_ratio_initial_limit": 36.0,
+    "QLE_log_ratio_max_limit": 60.0,
+    "QLE_tail_extension": 6.0,
+    "QLE_endpoint_intervals_always_searched": true,
+    "QLE_optimizer_xatol": 1e-13,
+    "QLE_tail_agreement_per_observation": 1e-10,
+    "QLE_global_optimum_claim": false
+  },
+  "degenerate_reporting": "Numerically unresolved/degenerate stochastic scale is separate from regular MLE and numerical failure. Preserve observed-only limiting frontier and TE=1 convention separately; do not label it an identified stochastic decomposition.",
+  "score_identity_tolerance": 1e-07,
+  "source_lock_required": true,
+  "threads": 1,
+  "workers": 1,
+  "minimum_free_GiB": 10,
+  "task_timeout_seconds": 1800
+}

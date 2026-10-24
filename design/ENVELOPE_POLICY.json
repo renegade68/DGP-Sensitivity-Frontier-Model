@@ -1,0 +1,17 @@
+{
+  "status": "fixed_before_full_replay",
+  "scope": "StoNED evaluation envelope only; all 44 saved CNLS/QLE fits and all 230000 evaluation queries",
+  "LP": "min b0+q'beta subject to b0+x_i'beta>=g_i, beta>=0, free b0",
+  "fallback_order": ["original persistent HiGHS", "fresh identical LP and default presolve/scaling", "fresh identical LP with presolve/scaling off", "independent dual LP or normalized separating-ray LP"],
+  "trigger": "unresolved solver status or failed certificate, including apparently optimal but uncertified output",
+  "solver_primal_dual_tolerance": 1e-9,
+  "certificate_tolerance": 1e-7,
+  "negative_ray_margin": 1e-10,
+  "ray_strengthening": "construct nonnegative slopes and lift the free intercept by feasibility residual plus a rounding guard, then recheck strict separation; certificate only, no estimated value is clipped",
+  "domain_definition": "q lies in the convex hull of observed x plus the nonnegative orthant",
+  "outside_handling": "preserve NaN prediction and explicit support exclusion; do not fabricate a prediction or label an unknown result outside without a certificate",
+  "changed_fit_parameters": false,
+  "new_random_draws": false,
+  "uses_latent_truth": false,
+  "production_auto_launch": false
+}

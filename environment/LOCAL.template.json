@@ -1,0 +1,9 @@
+{
+  "python_overlay": "/absolute/path/to/pinned/python/site-packages",
+  "python_base": "/absolute/path/to/base/site-packages",
+  "Rscript": "/absolute/path/to/Rscript",
+  "R_libraries": [
+    "/absolute/path/to/pinned/R-library"
+  ],
+  "ipopt": "/absolute/path/to/ipopt"
+}

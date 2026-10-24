@@ -1,0 +1,399 @@
+{
+  "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python_packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "highspy": "1.15.1",
+    "clarabel": "0.11.1",
+    "pystoned": "0.7.5",
+    "pyomo": "6.9.5",
+    "docplex": "2.32.264",
+    "scikit-learn": "1.9.1"
+  },
+  "R": "R version 4.6.0 (2026-04-24)",
+  "R_packages": [
+    {
+      "name": "tidyselect",
+      "version": "1.2.1"
+    },
+    {
+      "name": "libcoin",
+      "version": "1.0.13"
+    },
+    {
+      "name": "dplyr",
+      "version": "1.2.1"
+    },
+    {
+      "name": "farver",
+      "version": "2.1.2"
+    },
+    {
+      "name": "graphics",
+      "version": "4.6.0"
+    },
+    {
+      "name": "S7",
+      "version": "0.2.2"
+    },
+    {
+      "name": "fastmap",
+      "version": "1.2.0"
+    },
+    {
+      "name": "digest",
+      "version": "0.6.39"
+    },
+    {
+      "name": "rpart",
+      "version": "4.1.27"
+    },
+    {
+      "name": "lifecycle",
+      "version": "1.0.5"
+    },
+    {
+      "name": "micEcon",
+      "version": "0.6.20"
+    },
+    {
+      "name": "Benchmarking",
+      "version": "0.33"
+    },
+    {
+      "name": "survival",
+      "version": "3.8.6"
+    },
+    {
+      "name": "fastGHQuad",
+      "version": "1.0.1"
+    },
+    {
+      "name": "base",
+      "version": "4.6.0"
+    },
+    {
+      "name": "ggparty",
+      "version": "1.0.0.1"
+    },
+    {
+      "name": "trustOptim",
+      "version": "0.8.7.4"
+    },
+    {
+      "name": "magrittr",
+      "version": "2.0.5"
+    },
+    {
+      "name": "compiler",
+      "version": "4.6.0"
+    },
+    {
+      "name": "rlang",
+      "version": "1.3.0"
+    },
+    {
+      "name": "tools",
+      "version": "4.6.0"
+    },
+    {
+      "name": "partykit",
+      "version": "1.3.0"
+    },
+    {
+      "name": "eat",
+      "version": "0.1.4"
+    },
+    {
+      "name": "mnorm",
+      "version": "1.2.3"
+    },
+    {
+      "name": "collapse",
+      "version": "2.1.6"
+    },
+    {
+      "name": "texreg",
+      "version": "1.40"
+    },
+    {
+      "name": "plyr",
+      "version": "1.8.9"
+    },
+    {
+      "name": "RColorBrewer",
+      "version": "1.1.3"
+    },
+    {
+      "name": "methods",
+      "version": "4.6.0"
+    },
+    {
+      "name": "nleqslv",
+      "version": "3.3.7"
+    },
+    {
+      "name": "numDeriv",
+      "version": "2016.8.1.1"
+    },
+    {
+      "name": "grid",
+      "version": "4.6.0"
+    },
+    {
+      "name": "grDevices",
+      "version": "4.6.0"
+    },
+    {
+      "name": "ggplot2",
+      "version": "4.0.3"
+    },
+    {
+      "name": "scales",
+      "version": "1.4.0"
+    },
+    {
+      "name": "iterators",
+      "version": "1.0.14"
+    },
+    {
+      "name": "MASS",
+      "version": "7.3.65"
+    },
+    {
+      "name": "cli",
+      "version": "3.6.6"
+    },
+    {
+      "name": "inum",
+      "version": "1.0.5"
+    },
+    {
+      "name": "mvtnorm",
+      "version": "1.4.2"
+    },
+    {
+      "name": "marqLevAlg",
+      "version": "2.0.8"
+    },
+    {
+      "name": "utils",
+      "version": "4.6.0"
+    },
+    {
+      "name": "qrng",
+      "version": "0.0.11"
+    },
+    {
+      "name": "miscTools",
+      "version": "0.6.30"
+    },
+    {
+      "name": "generics",
+      "version": "0.1.4"
+    },
+    {
+      "name": "RcppParallel",
+      "version": "6.2.1"
+    },
+    {
+      "name": "httr",
+      "version": "1.4.8"
+    },
+    {
+      "name": "reshape2",
+      "version": "1.4.5"
+    },
+    {
+      "name": "bdsmatrix",
+      "version": "1.3.7"
+    },
+    {
+      "name": "cachem",
+      "version": "1.1.0"
+    },
+    {
+      "name": "stringr",
+      "version": "1.6.0"
+    },
+    {
+      "name": "datasets",
+      "version": "4.6.0"
+    },
+    {
+      "name": "splines",
+      "version": "4.6.0"
+    },
+    {
+      "name": "parallel",
+      "version": "4.6.0"
+    },
+    {
+      "name": "vctrs",
+      "version": "0.7.3"
+    },
+    {
+      "name": "Matrix",
+      "version": "1.7.5"
+    },
+    {
+      "name": "sandwich",
+      "version": "3.1.1"
+    },
+    {
+      "name": "jsonlite",
+      "version": "2.0.0"
+    },
+    {
+      "name": "sfaR",
+      "version": "1.0.1"
+    },
+    {
+      "name": "ggrepel",
+      "version": "0.9.8"
+    },
+    {
+      "name": "plm",
+      "version": "2.6.7"
+    },
+    {
+      "name": "Formula",
+      "version": "1.2.5"
+    },
+    {
+      "name": "foreach",
+      "version": "1.5.2"
+    },
+    {
+      "name": "glue",
+      "version": "1.8.1"
+    },
+    {
+      "name": "codetools",
+      "version": "0.2.20"
+    },
+    {
+      "name": "rngWELL",
+      "version": "0.10.10"
+    },
+    {
+      "name": "stringi",
+      "version": "1.8.9"
+    },
+    {
+      "name": "strucchange",
+      "version": "1.6.0"
+    },
+    {
+      "name": "cubature",
+      "version": "2.1.4.1"
+    },
+    {
+      "name": "gtable",
+      "version": "0.3.6"
+    },
+    {
+      "name": "quadprog",
+      "version": "1.5.8"
+    },
+    {
+      "name": "lmtest",
+      "version": "0.9.40"
+    },
+    {
+      "name": "randtoolbox",
+      "version": "2.0.5"
+    },
+    {
+      "name": "tibble",
+      "version": "3.3.1"
+    },
+    {
+      "name": "pillar",
+      "version": "1.11.1"
+    },
+    {
+      "name": "R6",
+      "version": "2.6.1"
+    },
+    {
+      "name": "ucminf",
+      "version": "1.2.3"
+    },
+    {
+      "name": "stats",
+      "version": "4.6.0"
+    },
+    {
+      "name": "maxLik",
+      "version": "1.5.2.2"
+    },
+    {
+      "name": "Rdpack",
+      "version": "2.6.6"
+    },
+    {
+      "name": "doParallel",
+      "version": "1.0.17"
+    },
+    {
+      "name": "conflicted",
+      "version": "1.2.0"
+    },
+    {
+      "name": "lpSolveAPI",
+      "version": "5.5.2.0.17.15"
+    },
+    {
+      "name": "lattice",
+      "version": "0.22.9"
+    },
+    {
+      "name": "rbibutils",
+      "version": "2.4.1"
+    },
+    {
+      "name": "moments",
+      "version": "0.14.1"
+    },
+    {
+      "name": "backports",
+      "version": "1.5.1"
+    },
+    {
+      "name": "memoise",
+      "version": "2.0.1"
+    },
+    {
+      "name": "hpa",
+      "version": "1.3.4"
+    },
+    {
+      "name": "Rcpp",
+      "version": "1.1.1.1.1"
+    },
+    {
+      "name": "nlme",
+      "version": "3.1.169"
+    },
+    {
+      "name": "checkmate",
+      "version": "2.3.4"
+    },
+    {
+      "name": "frontier",
+      "version": "1.1.8"
+    },
+    {
+      "name": "zoo",
+      "version": "1.8.15"
+    },
+    {
+      "name": "pkgconfig",
+      "version": "2.0.3"
+    }
+  ],
+  "status": "Historical environment metadata, not an installation lock or readiness approval"
+}

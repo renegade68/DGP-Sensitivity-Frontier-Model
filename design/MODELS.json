@@ -1,0 +1,120 @@
+{
+  "models": [
+    {
+      "model_id": "EAT",
+      "role": "ML",
+      "required": true,
+      "backend": "eat",
+      "proposed_version": "0.1.4",
+      "specification": "EAT numStop=5 fold=5; selected pruned tree",
+      "primary_source": "https://journal.r-project.org/articles/RJ-2022-054/",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json"
+    },
+    {
+      "model_id": "CEAT",
+      "role": "ML",
+      "required": true,
+      "backend": "eat",
+      "proposed_version": "0.1.4",
+      "specification": "same EAT tree; efficiencyCEAT BCC.OUT; digits=12",
+      "primary_source": "https://journal.r-project.org/articles/RJ-2022-054/",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "domain_certification": "Input-only support LP; exact rational separating-hyperplane sign for near-boundary points. Same VRS technology and LP qualification tolerances."
+    },
+    {
+      "model_id": "SVF_PAPER",
+      "role": "ML",
+      "required": true,
+      "backend": "author SVF-Splines + disclosed adapter",
+      "proposed_version": "22ea128bc811231229316f0ff2497018829fe1a2",
+      "specification": "nonnegative intercept; full 800x5 CV; sum-slack",
+      "primary_source": "https://github.com/danielvacarre/SVF_Package/tree/22ea128bc811231229316f0ff2497018829fe1a2",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json"
+    },
+    {
+      "model_id": "FDH",
+      "role": "reference",
+      "required": true,
+      "backend": "Benchmarking",
+      "proposed_version": "0.33",
+      "specification": "RTS=fdh; output; training-only reference",
+      "primary_source": "https://stat.ethz.ch/CRAN/web/packages/Benchmarking/Benchmarking.pdf",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json"
+    },
+    {
+      "model_id": "DEA_VRS",
+      "role": "reference",
+      "required": true,
+      "backend": "Benchmarking",
+      "proposed_version": "0.33",
+      "specification": "RTS=vrs; output; training-only reference",
+      "primary_source": "https://stat.ethz.ch/CRAN/web/packages/Benchmarking/Benchmarking.pdf",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "domain_certification": "Input-only support LP; exact rational separating-hyperplane sign for near-boundary points. Same VRS technology and LP qualification tolerances."
+    },
+    {
+      "model_id": "SFA_CD_HN",
+      "role": "reference",
+      "required": true,
+      "backend": "sfaR 1.0.1 likelihood + disclosed stable SciPy/HiGHS/Clarabel adapter",
+      "proposed_version": "1.0.1",
+      "specification": "log-CD; half-normal/normal",
+      "primary_source": "https://cran.r-project.org/package=sfaR",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "implementation_variant": "sfaR_likelihood_SciPy_centered_HN_boundary_v3",
+      "backend_change_reason": "Benchmarking permits negative production lambda; one common public log-variance backend for HN and EXP, selected by likelihood/parameter-space fixtures, not frontier losses"
+    },
+    {
+      "model_id": "SFA_TL_HN",
+      "role": "reference",
+      "required": true,
+      "backend": "sfaR 1.0.1 likelihood + disclosed stable SciPy/HiGHS/Clarabel adapter",
+      "proposed_version": "1.0.1",
+      "specification": "log-translog; half-normal/normal",
+      "primary_source": "https://cran.r-project.org/package=sfaR",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "implementation_variant": "sfaR_likelihood_SciPy_centered_HN_boundary_v3",
+      "backend_change_reason": "Benchmarking permits negative production lambda; one common public log-variance backend for HN and EXP, selected by likelihood/parameter-space fixtures, not frontier losses"
+    },
+    {
+      "model_id": "SFA_CD_EXP",
+      "role": "reference",
+      "required": true,
+      "backend": "sfaR 1.0.1 likelihood + disclosed stable SciPy/HiGHS/Clarabel adapter",
+      "proposed_version": "1.0.1",
+      "specification": "log-CD; exponential/normal",
+      "primary_source": "https://cran.r-project.org/package=sfaR",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "implementation_variant": "sfaR_likelihood_SciPy_boundary_profile_v2",
+      "backend_change_reason": "Benchmarking permits negative production lambda; one common public log-variance backend for HN and EXP, selected by likelihood/parameter-space fixtures, not frontier losses"
+    },
+    {
+      "model_id": "SFA_TL_EXP",
+      "role": "reference",
+      "required": true,
+      "backend": "sfaR 1.0.1 likelihood + disclosed stable SciPy/HiGHS/Clarabel adapter",
+      "proposed_version": "1.0.1",
+      "specification": "log-translog; exponential/normal",
+      "primary_source": "https://cran.r-project.org/package=sfaR",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "implementation_variant": "sfaR_likelihood_SciPy_boundary_profile_v2",
+      "backend_change_reason": "Benchmarking permits negative production lambda; one common public log-variance backend for HN and EXP, selected by likelihood/parameter-space fixtures, not frontier losses"
+    },
+    {
+      "model_id": "StoNED_QLE",
+      "role": "reference",
+      "required": true,
+      "backend": "pyStoNED",
+      "proposed_version": "0.7.5",
+      "specification": "multiplicative CNLS prod/vrs; normal-half-normal QLE",
+      "primary_source": "https://pystoned.readthedocs.io/en/latest/api/formulations/CNLS.html",
+      "integrated_adapter_status": "Frozen implementation; current qualification evidence is validation/INTEGRATION_SMOKE.json and validation/READINESS.json",
+      "implementation_variant": "pyStoNED0.7.5_log_ratio_profile_stable_scores_certified_envelope_v4"
+    }
+  ],
+  "backend_amendment_evidence": [
+    "validation/INTEGRATION_SMOKE.json",
+    "evidence/ADAPTER_PROVENANCE.json"
+  ],
+  "old_Benchmarking_HN": "preserved fixture comparator; never relabel old fits"
+}

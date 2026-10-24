@@ -1,0 +1,167 @@
+{
+  "source": "https://github.com/danielvacarre/SVF_Package/tree/22ea128bc811231229316f0ff2497018829fe1a2",
+  "commit": "22ea128bc811231229316f0ff2497018829fe1a2",
+  "reason": "No license file recorded in frozen snapshot; source not redistributed in this new component. Obtain through an authorized route under applicable terms.",
+  "files": [
+    {
+      "path": "vendor/SVF_Package/__init__.py",
+      "bytes": 45,
+      "sha256": "d9f585e2c12599b6fed2d4362cb064c2de2f09b6f8a599932ccde16db1789417"
+    },
+    {
+      "path": "vendor/SVF_Package/cv/__init__.py",
+      "bytes": 52,
+      "sha256": "646ec19ec6665a36c10d70ba32276b4f81be69cc5bee51d14e313ebf76db80e8"
+    },
+    {
+      "path": "vendor/SVF_Package/cv/cv.py",
+      "bytes": 8688,
+      "sha256": "7f719814998037f7ea5c1f8c27f1bb00088bc81dd2c4099172c2503c27df6b0b"
+    },
+    {
+      "path": "vendor/SVF_Package/cv/fold.py",
+      "bytes": 535,
+      "sha256": "dfeb3ed3344084ba54e128a8b95cb7b6c6fb8b21382eabd5a0cf3341883d1431"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/__init__.py",
+      "bytes": 192,
+      "sha256": "39c223d24acb00f3a6d0c7f493ec6f6dcdc40f006e23ecd2d22105d3c7db21f4"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/csvf_eff.py",
+      "bytes": 16729,
+      "sha256": "37be16224f3390444900ed82730eabcb4e0f2596c51145f95b3772f5ea588186"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/dea.py",
+      "bytes": 15479,
+      "sha256": "1690278447741d88dfb37ebaf91a914b9fe73bfaadf2799a3f61d9b0faaec155"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/efficiency_method.py",
+      "bytes": 2091,
+      "sha256": "dee4b587ab208aeadd5981f4ca488e4b8747e175e723a1c630b0b48d4d013e5b"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/fdh.py",
+      "bytes": 15375,
+      "sha256": "a9c6ed4f758e5bef84068c6d41f13abca69ca88058f4e22994c8ebd98e1657fd"
+    },
+    {
+      "path": "vendor/SVF_Package/efficiency/svf_eff.py",
+      "bytes": 16590,
+      "sha256": "596aed5f587362b4f84c477e571e86c89fdc79e54bd852a0b008130d9f2f2a12"
+    },
+    {
+      "path": "vendor/SVF_Package/grid/__init__.py",
+      "bytes": 103,
+      "sha256": "0eaa9ba1a150fe7dd6e828d7781d1efe9ab5cb5a69c16675f0a20fd09bc27a54"
+    },
+    {
+      "path": "vendor/SVF_Package/grid/grid.py",
+      "bytes": 2143,
+      "sha256": "b899f690bef124f390c30891e9638bcebfc4d5fdcf129b7b363bdfbc85c89870"
+    },
+    {
+      "path": "vendor/SVF_Package/grid/svf_splines_grid.py",
+      "bytes": 2741,
+      "sha256": "13d9a46c98ca3014bd67f2102710078aab1c036151eedfe68f9a6c215ad5f0db"
+    },
+    {
+      "path": "vendor/SVF_Package/grid/svfgrid.py",
+      "bytes": 4319,
+      "sha256": "d9b3073b8de4be69af9ab38b635f1f88cbdc8f3bcbbbb8678cfa749b6ae960e2"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/__init__.py",
+      "bytes": 170,
+      "sha256": "b53876c87f7c4a5a88478c88d4909b8fa6ac7544e1c8f88f3b9145aa5df4b249"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/ssvf.py",
+      "bytes": 4823,
+      "sha256": "e8c8a92503d15063230b92feffc13e133dc5b6bf311f669136db9e0e7d001397"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/svf.py",
+      "bytes": 8227,
+      "sha256": "e99e00fd136d8643f66e0f633ca78d8d9acffc724f59a489c237b023b6fc0283"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/svf_dual.py",
+      "bytes": 7548,
+      "sha256": "98bbf4ed36a352d17e17dbf4b0f328ab00fc2be7ba690d2b1db8d3f4992824ed"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/svf_splines.py",
+      "bytes": 8481,
+      "sha256": "2bae5a7dfa0cb23905d6481439fa2cbd0805fcd3219f55c61e3bf76d97a550a1"
+    },
+    {
+      "path": "vendor/SVF_Package/methods/svfc.py",
+      "bytes": 6415,
+      "sha256": "ac9266ceb2837c69898df2e980a8cffaf74008a9302fa328759f9c9384564ba5"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_functions.py",
+      "bytes": 865,
+      "sha256": "21c6bc2dc07b4fd3090997050049f2d0d02de405c7610eac825fa7bc5a011048"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/__init__.py",
+      "bytes": 100,
+      "sha256": "a5e0c604c6349c5dddf10e5302c2c4b7dd65bcd5daca277d6d4159fed45c2c9e"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/pfi_svf.py",
+      "bytes": 3203,
+      "sha256": "96d7567f7f9179fcf0213620afac98116ed842a480d2f8591a5a4eb88751f44d"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/pseudosample.py",
+      "bytes": 1175,
+      "sha256": "05d06bd94f262b123beec3d59db09610093e599067eb4d72619460219583aa36"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/pseudosamples_svf.py",
+      "bytes": 3228,
+      "sha256": "d401e89d4d246a39f2b1c44eb99899802984752153ee0bc438ec1a2383ad37b4"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/ranking_method.py",
+      "bytes": 476,
+      "sha256": "4c79d2ae5bb2aa4f2c09c17a286955f726b5883fba1d8001993a2658dffce7bb"
+    },
+    {
+      "path": "vendor/SVF_Package/ranking_variables/rfe_svf.py",
+      "bytes": 3502,
+      "sha256": "94f3755ad25c374699f0bfea83a66cafed8ddcfb0b1d3e1a3cc902972d540be0"
+    },
+    {
+      "path": "vendor/SVF_Package/simulation.py",
+      "bytes": 11485,
+      "sha256": "54715a08afde37b4bb4f550bdfac13d9f00725bbcf1905daabe91331a57cecd0"
+    },
+    {
+      "path": "vendor/SVF_Package/solution/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/SVF_Package/solution/svf_dual_solution.py",
+      "bytes": 619,
+      "sha256": "9ed9edb2fc5257666f5471e15ecdc66b49caefb7385ef9a10aab3fe7991348db"
+    },
+    {
+      "path": "vendor/SVF_Package/solution/svf_solution.py",
+      "bytes": 341,
+      "sha256": "89b846f750b883e3f4ab381ae185fd7e55f095f8df818b040e64e99b6d9e1ee6"
+    },
+    {
+      "path": "vendor/SVF_Package/svf_functions.py",
+      "bytes": 2906,
+      "sha256": "e92ab613df6e0b256aaf76282095a4852dc8a6c28b0e20cc838fd3f5baf0a0a5"
+    }
+  ]
+}

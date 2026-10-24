@@ -1,0 +1,100 @@
+{
+  "primary_pairs": [
+    [
+      "EAT",
+      "FDH"
+    ],
+    [
+      "CEAT",
+      "DEA_VRS"
+    ],
+    [
+      "SVF_PAPER",
+      "DEA_VRS"
+    ],
+    [
+      "CEAT",
+      "EAT"
+    ],
+    [
+      "SVF_PAPER",
+      "EAT"
+    ],
+    [
+      "SVF_PAPER",
+      "CEAT"
+    ],
+    [
+      "EAT",
+      "SFA_CD_HN"
+    ],
+    [
+      "EAT",
+      "SFA_TL_HN"
+    ],
+    [
+      "EAT",
+      "SFA_CD_EXP"
+    ],
+    [
+      "EAT",
+      "SFA_TL_EXP"
+    ],
+    [
+      "EAT",
+      "StoNED_QLE"
+    ],
+    [
+      "CEAT",
+      "SFA_CD_HN"
+    ],
+    [
+      "CEAT",
+      "SFA_TL_HN"
+    ],
+    [
+      "CEAT",
+      "SFA_CD_EXP"
+    ],
+    [
+      "CEAT",
+      "SFA_TL_EXP"
+    ],
+    [
+      "CEAT",
+      "StoNED_QLE"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_CD_HN"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_TL_HN"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_CD_EXP"
+    ],
+    [
+      "SVF_PAPER",
+      "SFA_TL_EXP"
+    ],
+    [
+      "SVF_PAPER",
+      "StoNED_QLE"
+    ]
+  ],
+  "difference": "loss(A)-loss(B); negative favors A",
+  "primary_frontier": "independent FDH-common uniform box 5000 points",
+  "secondary_frontier": "DEA-common excluding EAT/FDH; full box for SVF/SFA; copula measure separate",
+  "TE_views": [
+    "common_raw",
+    "native_BC",
+    "native_exp_JLMS"
+  ],
+  "constant_truth_rank": "NA not failure",
+  "pointwise_CI": "paired replication t, availability 2x2 reported",
+  "MC_unit": "dataset replication, not DMUs or fixed evaluation points",
+  "full_contract_parent_sha256": "3d92521b0b4143d654ff9a2f03185b6d1cda2673048dc6dc8ed8cc5bea166b1f"
+}

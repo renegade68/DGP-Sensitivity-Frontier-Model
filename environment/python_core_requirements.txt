@@ -1,0 +1,9 @@
+numpy==2.2.6
+scipy==1.18.1
+pandas==3.0.5
+highspy==1.15.1
+clarabel==0.11.1
+pystoned==0.7.5
+pyomo==6.9.5
+docplex==2.32.264
+scikit-learn==1.9.1

@@ -1,0 +1,137 @@
+후속 통합 평가의 분석 계약 / 2026-10-08
+상태: 분석 명세, 구현·수치 검증 전. 기존 결과에 소급 적용하지 않는다.
+기존 PREEXECUTION_CONTRACT G02/G05/G09와 DESIGN_ADDENDUM A–D를 구체화한다.
+
+1. 평가 대상과 관측 단위
+
+DGP: y_i=f(x_i)exp(v_i-u_i), true_TE_i=exp(-u_i).
+평가 단위는 먼저 동일 자료 반복 안의 DMU 또는 고정 평가점, 그 다음 MC 반복이다.
+독립5000점에는 x와 참 f만 있으므로 그 위에서는 frontier 위험을 평가한다.
+새로운 u/v/y를 그 점에 생성한 것으로 간주하지 않는다. TE 수준과 순위는 잠재
+참값을 저장한 관측 DMU에서 평가한다. estimator 입력은 x,y이며 truth를 전달하지 않는다.
+
+주 지표: 영역 S에서 MSE_r=mean_S((fhat-f)^2),
+NMSE_r=MSE_r/mean_S(f^2). 정규화 분모는 모형마다 바뀌지 않는다.
+같은 영역의 MAE, signed bias, 과대추정 빈도는 보조 지표다.
+관측점 위험과 독립 평가점 위험을 별도로 보고한다. frontier를 조건부 평균 산출과
+혼동하지 않으며 observed-y CV loss는 선택 과정의 기록으로 남긴다.
+
+TE에는 다음 두 뷰를 구분한다.
+A. common_raw: 모든 방법의 저장된 frontier로 y/fhat을 동일하게 계산한다.
+   frontier 추정치의 차이를 동일 점수 규칙에서 비교한다. 잡음 분해 효율성으로
+   부르지 않는다. 양의 유한 frontier가 필요하며 1 초과 값을 임의 clipping하지 않는다.
+B. native_procedure: 패키지/adapter가 검증하여 제공하는 방법 고유의 점수다.
+   deterministic 방법의 raw_y_over_frontier, SFA/StoNED의 BC=E(exp(-u)|epsilon),
+   exp(-JLMS_mean_u)=exp(-E(u|epsilon))를 별도 score_type으로 표시한다.
+   BC와 JLMS를 혼합 집계하지 않는다. backend에 검증된 출력이 없는 경우
+   임의로 만들어 채우지 않고 구현 전 관문에서 제공 여부를 명시한다.
+같은 native 점수를 여러 표에 쓸 때 source metric ID를 공유한다. common_raw와
+같은 값인 deterministic 결과를 독립적인 추가 증거로 세지 않는다.
+oracle_raw=y/f=exp(v-u)는 진단용이며 모든 추정 절차의 손실 하한은 아니다.
+
+TE 오차 e=TEhat-true_TE. 각 반복에서 MAE, MSE, RMSE=sqrt(MSE), bias,
+under/over/tie 빈도(e<0/e>0/e==0), under_magnitude=mean(max(-e,0)),
+over_magnitude=mean(max(e,0))를 계산한다. signed 오류 항등식을 원시값으로 검산한다.
+단위는 fraction이며 percentage-point 표시 변환은 최종 표에서만 한다.
+순위는 높은 TE가 높은 효율임을 통일하고 average-rank Spearman과 Kendall tau-b를
+계산한다. exact tie를 유지하며 상수 truth/score는 NA와 사유를 남긴다.
+u=0 경계의 순위 NA를 실패나 0 상관으로 취급하지 않는다.
+
+2. 공통 입력영역과 실패 분모
+
+모든10모형을 함께 보는 독립 위험: 입력만으로 정한 FDH-feasible mask.
+EAT가 없는 CEAT/DEA/SVF/SFA/StoNED 비교: 별도 DEA-feasible mask.
+관측점 위험은 동일 training X. 각 mask는 입력으로 결정하고 원시 해시와
+후보5000점 중 포함률/점수를 저장한다. solver 실패 때문에 mask를 줄이지 않는다.
+mask 전체에서 예측이 유효해야 해당 반복의 해당 지표가 가용하다.
+빈 mask는 NA; 손실0이나 새로운 평가점으로 대체하지 않는다.
+외삽 가능한 모형의 전체 box 위험은 별도 보조 표이며 공통영역 표와 섞지 않는다.
+상관 조건은 Uniform-box 위험과 별도 copula 측도 위험을 각각 저장한다.
+n 대조의 공통영역은 해당 n의 mask 교집합으로 지정하고 영역 효과도 함께 보고한다.
+
+attempted, finite, package_converged, strict_qualified, metric_available를
+별도 집계한다. 경계해·왜도·rank·수치오류·support·상수 순위 사유를 구분한다.
+각 모형의 고유 성공 반복 평균은 descriptive이며 직접 우열 대조와 구별한다.
+대조 A,B의 주 paired 표본은 같은 ID, metric, mask, 가중치에서 양쪽 모두
+qualified이고 해당 지표가 가용한 반복이다. 양쪽/ A만/ B만/둘 다 불가의
+2×2 빈도와 전체 시도 수를 함께 출력한다. 선택된 성공 표본의 성능이라는 한계를 명시한다.
+유효값을 임의 벌점/0/참값/다른 모형 값으로 대체하지 않고 실패한 자료도 보존한다.
+동일한 영역이라도 pair별 성공 반복이 다르면 하나의 전모형 순위표로 합치지 않는다.
+
+3. 사전 지정 대조와 난수 의존성
+
+Delta=loss(A)-loss(B); 음수는 A의 작은 손실이다. 순위 지표를 손실로 대조할
+때는 1-rho 또는 1-tau로 명시하여 방향을 맞춘다. 원 상관값도 보고한다.
+중심 방법 대조는 EAT−FDH, CEAT−DEA, SVF−DEA, CEAT−EAT,
+SVF−EAT, SVF−CEAT다. 각 ML과 네 SFA 사양 및 StoNED의15대조를 함께
+정해진 순서로 보고한다. 최선의 SFA를 참값으로 골라 하나의 대표로 만들지 않는다.
+나머지 방법 쌍은 보조자료에서 동일 규칙으로 제공할 수 있으며 사후 유리한 쌍만 고르지 않는다.
+
+P1: 같은 함수/분포/scale에서 ratio 효과, 같은 함수/분포/ratio에서 scale 효과,
+동일 실제 SD의 EXP−HN 분포 대조, 동일 오차의 함수 대조를 고정한다.
+특히 ML−reference 손실 차이가 noise 조건에 따라 얼마나 달라지는지 조사한다.
+P1/P3: 공통 범위에서 n50→100, m3→5 및 ML−reference 차이의 변화를 분석한다.
+P2: 문헌 연결 함수에서 noise와 n 변화. P4: alpha1/.5/.25와 noise 대조.
+P5: 각 차원에서 v SD0→1/6→1/3→2/3. P6: 각 stress−해당 anchor.
+선택적 평균TE4: 각 HN control−EXP anchor, ID1..200만 사용한다.
+선택적 Gamma4: 같은 EXP anchor 및 채택 시 HN control과 대조, ID1..200만 사용한다.
+분산·곡률·지원영역 등 같이 변하는 항목을 표시하며 모든 대조를 단일 요인의
+순수 효과로 과해석하지 않는다. 전체 조건을 임의 동일 가중치로 합친 종합 우승자는 정하지 않는다.
+
+P1/P3 기본 요인 대조는 ID1..200이다. 사전12조건의 추가201..500은 별도
+정밀도 표에 사용한다. 조건 양쪽 모두 R500인 대조만 전체1..500을 쓴다.
+같은 m의 공유 난수 요인 대조는 각 반복에서 조건 간 차이 또는 차이의 차이를
+먼저 만든 뒤 반복 사이 MCSE를 계산한다. 셀 평균의 독립성을 가정하지 않는다.
+U1/U5 nested n은 공유 draw를 확인한 후 paired 대조한다. U3의 n별 표본과
+차원 m 사이에는 독립 stream이므로 독립 비교와 Welch MCSE/구간을 쓴다.
+같은 support 교집합을 썼다는 사실만으로 독립 표본이 paired가 되지 않는다.
+이는 옛 MASTER_PROTOCOL의 n 대조 문장에서 생길 수 있는 모호함을 명확히 한다.
+공통 평가점을 공유한다는 것과 관측자료 난수를 공유한다는 것도 구별한다.
+P2/P4의 동일 law는 서로 다른 cohort다. 숫자가 같은 rep ID만으로 pair/pool하지 않는다.
+factor contrast에는 관련 모든 조건에서 사용 가능한 반복과 탈락 분모를 표시한다.
+
+4. MC 불확실성과 결과 합치도
+
+paired mean Delta, sd(Delta)/sqrt(R_pairs), pointwise t 95% CI를 출력한다.
+R_pairs<2이면 MCSE/CI는 NA. 반복 평균·중앙값·90/95분위수와 paired 분포도
+보조 보고한다. mean(RMSE)와 sqrt(mean(MSE))는 다른 aggregation ID다.
+승률은 P(Delta<0), 동률은 P(Delta==0), 패배는 P(Delta>0)이며 분모는
+모든 유효 pair다. 승률의 Wilson95% 구간, exact tie 수를 함께 보고한다.
+pointwise 구간은 다중비교 보정된 확증 주장이 아니다. 유의성/성능 방향으로
+R을 늘리지 않는다. 반복 수200/500만으로 연속손실 정밀도가 충분하다고 단정하지 않는다.
+5000개의 고정 평가점이나 한 자료의 DMU를 MC 반복 수로 세지 않는다.
+
+통합 평가의 보조 진단으로 같은 자료/DMU에서 방법 쌍의
+mean(abs(score_A-score_B)) 및 Spearman(score_A,score_B)를 산출한다.
+주 합치도 표는 common_raw끼리 비교한다. BC/JLMS 등 서로 다른 점수 형식의
+비교는 양쪽 형식을 명시한 별도 표다. 각 방법의 truth-MAE/순위 정확도와
+가용성을 함께 보여서 '서로 동의하지만 틀리는' 경우도 보이게 한다.
+합치도를 정확성으로, 조건부 결과를 실자료 자동 선택 규칙으로 해석하지 않는다.
+결합 추정량이나 별도 학습 selector를 적합하는 과정은 이 명세에 없다.
+
+첨부 전문을 반영한 왜도 진단: 사전 CD/TL OLS 잔차에서
+g1=mean((e-mean(e))^3)/mean((e-mean(e))^2)^(3/2)를 저장한다.
+우리 생산함수 y=f*exp(v-u)의 정상 가정에서는 잔차의 음의 왜도가 기대된다.
+g1>0 여부는 설명용 진단이며 이것만으로 ML/수치해의 성공·실패를 결정하지 않는다.
+분산0/rank부족은 NA 사유를 기록한다. 비용함수와 반대 부호를 혼동하지 않는다.
+모든 시도를 분모로 한 왜도·경계해·수치실패 빈도를 먼저 보고, 조건부 손실 표는
+선택된 잔차 집단의 보조 분석으로 명시한다. wrong-skewness 표본을 원하는 수만큼
+다시 추출하지 않는다. 이 진단의 코드/잔차/공식도 원시값 재생 관문에 포함한다.
+
+5. 독자용 표·그림과 원시값 재생
+
+본문 구성: (1)방법·가정·구현 대응표, (2)실제 모수/DGP·범위 표,
+(3)함수/noise별 frontier 차이와 MC 구간, (4)TE 수준과 순위,
+(5)상호작용/표본·차원, (6)민감도와 가용성. 합치도는 참값 손실과 함께 배치한다.
+전체 SFA 사양, 모든 조건/실패/지원영역/시간·메모리와 선택 감도는 보충자료에 제공한다.
+최종 핵심 표시 모형이나 범례를 성능 결과에 맞춰 바꾸지 않는다.
+
+자료→모형→예측→metric→aggregate→표/그림/본문 수치의 ID와 부모 SHA256을 연결한다.
+source arithmetic은 원정밀도 배열/수치 필드를 사용하고 소수점 반올림은 출력 시점만 한다.
+표의 숫자를 손으로 재입력하지 않는다. 각 주장에는 해당 metric/contrast/aggregation을
+대응시키고 표에서 계산한 값과 본문 값의 항등식을 검증한다. 손실·효율성 항등식,
+FDH dominance, EAT/CEAT tree 공유, solver 잔차 등은 별도 audit에 남긴다.
+원고에는 내부 개발 파일명·U/P/D 코드 대신 함수/오차·모형·평가 대상의 명칭을 쓴다.
+내부 ID 대응표, 공개 획득 URL, 버전/라이선스, seed/환경/실행 명령은 재현자료에 둔다.
+가벼운 재현 예제는 생성→fit→원시값→표까지 실행되어야 하며 전체 실행 명령과
+실측 자원도 제공한다. 원본 결과를 다시 쓰지 않는 별도 폴더에서 replay를 검증한다.

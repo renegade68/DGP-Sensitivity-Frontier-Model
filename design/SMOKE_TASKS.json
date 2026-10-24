@@ -1,0 +1,92 @@
+[
+  {
+    "task": "U1_D04_r0001",
+    "cell_id": "U1_D04",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U1_D13_r0001",
+    "cell_id": "U1_D13",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U1_D14_r0002",
+    "cell_id": "U1_D14",
+    "replication_id": 2,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U1_D51_r0003",
+    "cell_id": "U1_D51",
+    "replication_id": 3,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U4_m5_n50_noise_equal_a0p25_r0001",
+    "cell_id": "U4_m5_n50_noise_equal_a0p25",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "DB_m5_n50_v_two_thirds_r0002",
+    "cell_id": "DB_m5_n50_v_two_thirds",
+    "replication_id": 2,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U5_m5_n100_D42_r0001",
+    "cell_id": "U5_m5_n100_D42",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U5_m3_n100_D04_r0001",
+    "cell_id": "U5_m3_n100_D04",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "REVIEW_U1_D36_input_correlation_r0001",
+    "cell_id": "REVIEW_U1_D36_input_correlation",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "REVIEW_U1_D04_noise_heteroskedasticity_r0001",
+    "cell_id": "REVIEW_U1_D04_noise_heteroskedasticity",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "REVIEW_U1_D36_noise_gaussian_mixture_r0001",
+    "cell_id": "REVIEW_U1_D36_noise_gaussian_mixture",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U3_m5_n50_noise_equal_level_r0001",
+    "cell_id": "U3_m5_n50_noise_equal_level",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U3_m5_n50_noise_half_r0001",
+    "cell_id": "U3_m5_n50_noise_half",
+    "replication_id": 1,
+    "cohort": "engineering"
+  },
+  {
+    "task": "U1_D29_r0012",
+    "cell_id": "U1_D29",
+    "replication_id": 12,
+    "cohort": "engineering_smoke"
+  },
+  {
+    "task": "U3_m5_n50_baseline_r0030",
+    "cell_id": "U3_m5_n50_baseline",
+    "replication_id": 30,
+    "cohort": "engineering_smoke"
+  }
+]

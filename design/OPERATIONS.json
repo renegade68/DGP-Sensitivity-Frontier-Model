@@ -1,0 +1,15 @@
+{
+  "workers": 1,
+  "threads": 1,
+  "minimum_free_GiB": 100,
+  "maximum_owned_group_RSS_GiB": 2,
+  "maximum_swap_growth_MiB": 256,
+  "require_memory_pressure_normal": true,
+  "stage_timeout_seconds": {"domain": 300, "R_models": 900, "dea": 900, "ceat": 900, "svf": 1200, "R_baseline": 600, "SFA_CD_HN": 600, "SFA_CD_EXP": 600, "SFA_TL_HN": 600, "SFA_TL_EXP": 600, "R_check": 120, "StoNED_QLE": 600, "normalize": 120, "audit": 120},
+  "numerical_failure": "Preserve same dataset and raw attempt; record affected model unavailable, continue other models.",
+  "timeout": "Kill only owned stage process group; record model TIMEOUT; domain, audit and schema timeouts stop for engineering review.",
+  "resource_interrupt": "Stop entire run after terminating owned stage group; retain partial attempt; explicit same-source resume starts a new attempt on identical data.",
+  "engineering_error": "Stop on unexpected exception, invalid schema, unresolved support or hash mismatch.",
+  "production_auto_launch": false,
+  "pilot_fit_reuse": false
+}

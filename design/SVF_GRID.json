@@ -1,0 +1,76 @@
+{
+  "C": [
+    0.001,
+    0.01,
+    0.05,
+    0.1,
+    0.5,
+    1,
+    2,
+    5,
+    10,
+    100
+  ],
+  "epsilon": [
+    0,
+    0.001,
+    0.005,
+    0.01,
+    0.05,
+    0.1,
+    0.5,
+    1
+  ],
+  "d": {
+    "30": [
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30
+    ],
+    "50": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "100": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ]
+  },
+  "folds": 5,
+  "exact_tie_order": [
+    "largest C",
+    "smallest epsilon",
+    "smallest d"
+  ],
+  "objective": "sum(beta^2)+C*sum(slack)",
+  "intercepts": "every feature-block constant >=0",
+  "fallback": "HiGHS then identical-QP Clarabel",
+  "gates": {
+    "primal": 1e-06,
+    "dual": 1e-06,
+    "relative_gap": 1e-05
+  }
+}

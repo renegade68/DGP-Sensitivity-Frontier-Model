@@ -1,0 +1,181 @@
+{
+  "source_release": "Local integrated replication archive v7, 25 October 2026",
+  "copied_files": {
+    "tools/aggregate.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/aggregate.py",
+      "sha256": "4dd272ab080cefcc2969449e88ba0e3ef82c23251d75f32a89f2481684a45829"
+    },
+    "tools/context.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/context.py",
+      "sha256": "2affb8d5bf55febf41d002c74a99bcd389ccdc32be84e9fa9e6103aa5906d99f"
+    },
+    "tools/dea_adapter.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/dea_adapter.py",
+      "sha256": "229c787d1b936e95f0a3fc2d9a2d9cacae6dc3a9d9d4739114fb1e80ac1a0baa"
+    },
+    "tools/dea_certify.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/dea_certify.py",
+      "sha256": "cf123d8399d419f6120f05b6a0772445380107b0417e400f0c1cf3dc68dde3a0"
+    },
+    "tools/dea_common.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/dea_common.py",
+      "sha256": "9aa891ad193ef72a2bd10e68a556e10bb68f16056240ba3fa662af1b0f63a049"
+    },
+    "tools/dea_public.R": {
+      "source": "revision/replication_archive_v7/current/production/tools/dea_public.R",
+      "sha256": "cd26d2c670179dba74e20765e242c7b3c11fad722cfa1465f4dd6328dbcbf69a"
+    },
+    "tools/dea_worker.R": {
+      "source": "revision/replication_archive_v7/current/production/tools/dea_worker.R",
+      "sha256": "986b35070e4b78304b0bf7b72bfe4cad899585a39c0b654f1ac31651f869169c"
+    },
+    "tools/deterministic.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/deterministic.py",
+      "sha256": "6735ac21be6962a9da41cc4de7f499c5902594bb2b2de887db892c240e258dcc"
+    },
+    "tools/envelope_adapter.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/envelope_adapter.py",
+      "sha256": "3c173c21bf28752a819af6ce9201ef1f62ad48971c4654b3b99257f2abadf57f"
+    },
+    "tools/finalize.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/finalize.py",
+      "sha256": "69818c631a102f668aa360be749a8c0e44137f71c3751487984faae27aed46d6"
+    },
+    "tools/first_batch.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/first_batch.py",
+      "sha256": "35e0e59a13c604a778cc060705cd6d7740fbdf799bacc13a9be678da8ed433e8"
+    },
+    "tools/generator.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/generator.py",
+      "sha256": "a3a9e320ca79088e8cb8e8bb1f3eff6c87dfd26644d11506510c70fd33436525"
+    },
+    "tools/independent_checks.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/independent_checks.py",
+      "sha256": "061c5dc0257454f0bae9901bc828343c7d0abc4917080ab0e7b615f08c181da9"
+    },
+    "tools/metrics.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/metrics.py",
+      "sha256": "24d9cc4299a989bfb9d457416ff8c29c21e7dbd0b6a3e8d5f4b16a5d69ebe73c"
+    },
+    "tools/public_svf.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/public_svf.py",
+      "sha256": "30b3f8b5aaa1c257f67983563ecf49299ffdb2936dd35c261e355c676f927bbc"
+    },
+    "tools/qle_profile_v4.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/qle_profile_v4.py",
+      "sha256": "3d3ccfe6b1b85f819cdbb4eac0f06ca6150905027a4ec5f3694f28fe64372cf1"
+    },
+    "tools/r_baseline.R": {
+      "source": "revision/replication_archive_v7/current/production/tools/r_baseline.R",
+      "sha256": "fb9ef36131a80e3150b65bce713e544901da2e7648781fb73ddcd80a1249b2ac"
+    },
+    "tools/r_check.R": {
+      "source": "revision/replication_archive_v7/current/production/tools/r_check.R",
+      "sha256": "3d789e58659473c86fe2f7487caadb9ba0d7b8ad5b3f0dc581b78c58f9361a00"
+    },
+    "tools/r_models.R": {
+      "source": "revision/replication_archive_v7/current/production/tools/r_models.R",
+      "sha256": "c5c849ef3645b1da78a14ec0b334f2194bee1f09aa65a06e6f3a2a0737be176c"
+    },
+    "tools/runner.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/runner.py",
+      "sha256": "f4a1e8dcb3f7cdff612602f4d6a0735cb353f58e643b03f5ea05fe67aa3369b0"
+    },
+    "tools/schema.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/schema.py",
+      "sha256": "03256164e536b30d752f9f3e9b1122a00b29a8379091e41099fb1bfcada4e516"
+    },
+    "tools/sfa_adapter.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/sfa_adapter.py",
+      "sha256": "aa66915966c2c5b4e8712c5d901cdfd07d18b4761d322115ad767779779523f5"
+    },
+    "tools/stable_math.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/stable_math.py",
+      "sha256": "9022c78e1d66eee991af9db657e3e549787eb6614e8a8a09871414e15c36d0e2"
+    },
+    "tools/stoned_adapter.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/stoned_adapter.py",
+      "sha256": "42b3bc2a78740889250095352bfd72a609105ff81c513fc5cf5834000dbfcd2b"
+    },
+    "tools/svf_math.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/svf_math.py",
+      "sha256": "44a33aa3554760f1eef8a131e45660f6c80894153334fb613a8e4d3a2a7b5bba"
+    },
+    "tools/svf_workspace.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/svf_workspace.py",
+      "sha256": "da8ebe6e8305c67c97ed8c9f600875a2fcb6807a4dd163b28957149d29c31e04"
+    },
+    "tools/tables.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/tables.py",
+      "sha256": "6f637360f2983b972472fd0571fe2a150e09049ce37a9c6e3ac507b7a0dfdb8b"
+    },
+    "tools/worker.py": {
+      "source": "revision/replication_archive_v7/current/production/tools/worker.py",
+      "sha256": "e57abfcf04d6b1700f250bd45e2ca89a88c720c2b54d98638fd74689b976d86d"
+    },
+    "design/ANALYSIS.json": {
+      "source": "revision/replication_archive_v7/current/production/design/ANALYSIS.json",
+      "sha256": "b0c461d0105280f822c63de3be6300d63c78f2bf90b115953154ebb9d914d144"
+    },
+    "design/ANALYSIS_CONTRACT.txt": {
+      "source": "revision/replication_archive_v7/current/production/design/ANALYSIS_CONTRACT.txt",
+      "sha256": "3d92521b0b4143d654ff9a2f03185b6d1cda2673048dc6dc8ed8cc5bea166b1f"
+    },
+    "design/CONTRASTS.json": {
+      "source": "revision/replication_archive_v7/current/production/design/CONTRASTS.json",
+      "sha256": "7a699fdd33a0a199de41814eb7723711cd41f18a30f67752c689702ff4a8c2bc"
+    },
+    "design/EFFECTIVE_DGP.json": {
+      "source": "revision/replication_archive_v7/current/production/design/EFFECTIVE_DGP.json",
+      "sha256": "39d1aa40ff46f3bcf2613ef480a792e76474d49ee00825ab1184729c3a7bdb8a"
+    },
+    "design/ENVELOPE_POLICY.json": {
+      "source": "revision/replication_archive_v7/current/production/design/ENVELOPE_POLICY.json",
+      "sha256": "124870582866de10de909655ddf9926154f1f4a9be5017f022adf4351f4e4b01"
+    },
+    "design/MODELS.json": {
+      "source": "revision/replication_archive_v7/current/production/design/MODELS.json",
+      "sha256": "b186dbc4aaca34d26092f3c2877129e256f4e1934d2b3f05188294ed8698dc5d"
+    },
+    "design/OPERATIONS.json": {
+      "source": "revision/replication_archive_v7/current/production/design/OPERATIONS.json",
+      "sha256": "8c7c1f864a760ee80b94718436bd34804cbefc14c5d288166961482f6c2a1688"
+    },
+    "design/SCOPE.json": {
+      "source": "revision/replication_archive_v7/current/production/design/SCOPE.json",
+      "sha256": "f231ac01d8aeab367252a0865d685046b59311127f744a4be6816b720e17d5ce"
+    },
+    "design/SMOKE_TASKS.json": {
+      "source": "revision/replication_archive_v7/current/production/design/SMOKE_TASKS.json",
+      "sha256": "7f2fd27175250de3a3235788546f6650a3be4bdab7d638eb354a7a3714d96295"
+    },
+    "design/STOCHASTIC_POLICY.json": {
+      "source": "revision/replication_archive_v7/current/production/design/STOCHASTIC_POLICY.json",
+      "sha256": "2ce975f051a7da63e560cd19a25d25f9c76caee6dbce54eab30ae39adea1c080"
+    },
+    "design/SVF_GRID.json": {
+      "source": "revision/replication_archive_v7/current/production/design/SVF_GRID.json",
+      "sha256": "00e4f7695e6dadc95aacbb231a348e9be0382d61915832a6ab75eb2a4e215d96"
+    },
+    "environment/SVF_EXTERNAL_SOURCE.json": {
+      "source": "revision/replication_archive_v7/current/production/SVF_EXTERNAL_SOURCE.json",
+      "sha256": "419084dc5c9bdf5537a7b0d79547d615627ba5d1b87ec39ed1b7f887f67a5858"
+    },
+    "environment/python_core_requirements.txt": {
+      "source": "revision/replication_archive_v7/current/production/environment_record/python_core_requirements.txt",
+      "sha256": "0a3f660ff695c64856b92952bb206f93b34c4a4c50f7b21dd325d90ef40b22cc"
+    },
+    "LICENSE": {
+      "source": "revision/replication_archive_v7/LICENSE",
+      "sha256": "d6713eea80365027e3adba81b0c509b9fa541616db5a4351b3129d3398e983be"
+    }
+  },
+  "omitted_controllers": [
+    "build_contract.py",
+    "portable.py",
+    "replay44.py",
+    "validate.py"
+  ],
+  "scientific_changes": "None; original source/design retained. Compact scheduling reconstruction is separately checked against original byte hashes.",
+  "scope": "Current ten-method code only; no publication files, fitted outcomes, or historical replication component"
+}
