@@ -57,3 +57,10 @@ an estimator, seed, scoring rule, or numerical policy changes.
 See `docs/MAINTENANCE.md` for versioning and `LICENSE` for the existing project
 terms. A software license does not imply current public availability. No
 manuscript or author-response material should be added here.
+
+## Isolated module repair
+
+`repairs/module_repair_v1/` contains the local-workspace repair pipeline for uniform
+direct FDH evaluation and controlled StoNED timeout retries. It requires preserved
+local inputs and writes a separate result layer. See its README before staging it.
+No repaired outcomes, manuscript changes, or reports are stored in this repository.

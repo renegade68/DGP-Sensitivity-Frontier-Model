@@ -176,6 +176,7 @@
     "replay44.py",
     "validate.py"
   ],
-  "scientific_changes": "None; original source/design retained. Compact scheduling reconstruction is separately checked against original byte hashes.",
-  "scope": "Current ten-method code only; no publication files, fitted outcomes, or historical replication component"
+  "scientific_changes": "Baseline copied files remain unchanged. The optional repairs/module_repair_v1 workflow is a separate post-run repair layer; it does not replace frozen production results or scientific source.",
+  "scope": "Current ten-method code only; no publication files, fitted outcomes, or historical replication component",
+  "repair_workflow": "repairs/module_repair_v1/README.md"
 }

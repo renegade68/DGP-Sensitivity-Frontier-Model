@@ -22,6 +22,16 @@ environment/LOCAL.template.json
 environment/RECORDED_VERSIONS.json
 environment/SVF_EXTERNAL_SOURCE.json
 environment/python_core_requirements.txt
+repairs/module_repair_v1/README.md
+repairs/module_repair_v1/aggregate_repair.py
+repairs/module_repair_v1/analyze_impact.py
+repairs/module_repair_v1/export_inputs.R
+repairs/module_repair_v1/fdh_recompute.py
+repairs/module_repair_v1/prepare.py
+repairs/module_repair_v1/retry_stoned.py
+repairs/module_repair_v1/verify_preservation.py
+repairs/module_repair_v1/verify_runtime.py
+repairs/module_repair_v1/verify_stoned.py
 scripts/prepare_workspace.py
 scripts/verify_code.py
 tools/aggregate.py
