@@ -1,23 +1,36 @@
-# Maintenance policy
+# Maintaining the code
 
-Keep this repository for source, fixed design, and small configuration metadata.
-Keep manuscripts, reviewer correspondence, outputs, large data, and local secrets
-outside the checkout. `.gitignore` allows only the current explicit file list;
-forcing a Git add can bypass it, so run `scripts/verify_code.py` before committing.
+Keep source, fixed design, and small configuration metadata in this repository.
+Keep manuscripts, reviewer correspondence, outputs, raw data, installed packages,
+and machine-specific configuration outside the checkout. The default-deny
+[.gitignore](../.gitignore) and [TRACKED_FILES.txt](../TRACKED_FILES.txt) enumerate
+the intended files. Update both when adding source, then run:
 
-For scientific changes, record the affected estimator, score, domain, random
-stream, or numerical rule in the commit. Recheck the relevant independent
-validation. A new code version is not a retroactive correction to frozen results.
-Never copy historical READY or EXECUTION_LOCK files to approve a new run.
+```sh
+python3 -B scripts/verify_code.py
+git diff --check
+```
 
-The repository, frozen replication archive, and manuscript are separate versions.
-At submission record the exact source commit used, the applicable replication
-archive hash, and the manuscript version. Decide repository visibility then;
-do not assert public availability or a DOI before either actually exists.
-Code-only access does not supply result data or reproduce paper tables by itself.
+[SOURCE_PROVENANCE.json](../SOURCE_PROVENANCE.json) distinguishes byte-preserved
+copies from adapted files. Its source paths identify records in the originating
+research workspace, not files expected in a clone. Hashes make these relationships
+checkable without committing the original results or publication archive.
 
-The initial scientific files are preserved copies. Some fixed design fields name
-historical source records or describe pre-run status; those fields are provenance,
-not claims that the completed production run is pending. The explicit scope
-contains all 117 adopted condition-by-cohort settings, including six stress cells
-whose inherited optional-preflight label is historical.
+For a scientific change, record the affected estimator, score, domain, random
+stream, or numerical rule and run the relevant independent validation. Update
+provenance deliberately; changing a hash alone does not validate a new algorithm.
+Keep the original run immutable and use a separately versioned result layer.
+Report implementation changes and their effects, including availability and
+auxiliary score/rank differences. Do not copy historical readiness or execution
+locks to approve a new run.
+
+Record the exact code commit and input-archive identity for each analysis.
+Code, saved numerical evidence, and publication documents have separate version
+histories. A source-only check does not certify result reproduction or a newly
+configured numerical environment.
+
+Some frozen design fields describe pre-run status or refer to historical source
+records. They are retained as provenance. All 117 adopted condition-by-cohort
+settings are included, including six stress cells with an inherited optional
+preflight label. The readable repository overview describes the current scope;
+historical identifiers are not rewritten to imply a new experiment.

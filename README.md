@@ -1,66 +1,84 @@
 # DGP Sensitivity in Frontier Estimation
 
-Minimal maintenance repository for the current ten-method simulation code and
-its frozen design. Repository visibility is currently private; the author will
-decide public availability at submission. This is not a public data deposit or a
-complete replication release, and no DOI is claimed.
+Simulation code for studying how data-generating processes (DGPs) affect
+production-frontier estimation and technical-efficiency measurement. The design
+compares methods under specified frontier shapes, noise and inefficiency
+distributions, sample sizes, input dimensions, and stress conditions. It examines
+when conclusions from particular simulation settings persist or change; it is
+not intended to identify a universally best estimator.
 
-## Scope
+## Methods and design
 
-- `tools/`: preserved scientific implementation, estimator adapters, metrics,
-  aggregation, and monitored runner from the completed production study.
-- `design/`: full-precision DGP definitions, model/analysis policies, contrasts,
-  and compact deterministic scheduling metadata.
-- `environment/`: recorded versions, a local-path template, and the external SVF
-  source reference. Software distributions are not bundled.
-- `scripts/`: code-inventory checks and preparation of a fresh workspace.
+The ten specifications are EAT, CEAT, SVF-Splines, FDH, VRS DEA, four SFA
+specifications (Cobb–Douglas or translog, with half-normal or exponential
+inefficiency), and StoNED-QLE. Package versions and disclosed implementation
+variants are recorded in the [method register](design/MODELS.json). The SFA
+routines use a stable likelihood/optimization adapter; they are not simply
+default calls to the comparison packages.
 
-Manuscripts, supplements, reviewer responses, publication tables/figures, saved
-results, raw arrays, logs, caches, installed packages, and replication ZIPs remain
-local. Historical bootstrap/selector code is outside this initial repository.
-The separately preserved replication archive supplies numerical replay and
-historical evidence; this repository alone cannot regenerate publication tables.
+The [frozen design](design/EFFECTIVE_DGP.json) contains 117 condition-by-cohort
+settings and 27,000 simulated datasets. Each setting has 200 replications;
+12 settings extend to 500, including their first 200 replications.
+Primary frontier NMSE is evaluated on independent points within the common
+evaluation domain. Efficiency levels and within-dataset rankings are evaluated
+against latent truth on training observations. Common output/frontier ratios and
+method-native efficiency scores are kept distinct, as are BC and JLMS scores.
+See the [analysis specification](design/ANALYSIS.json) and
+[paired contrasts](design/CONTRASTS.json).
 
-## Safe local checks (no estimation)
+Availability, numerical exclusions, boundary solutions, and Monte Carlo
+uncertainty accompany comparisons. Agreement with another implementation is a
+diagnostic check; it does not establish identification, global optimality, or
+equivalent predictions in every case.
+
+## Repository contents
+
+| Directory | Contents |
+| --- | --- |
+| [tools/](tools/) | DGP generator, estimator adapters, scoring, aggregation, and original monitored runner |
+| [design/](design/) | Frozen DGPs, model policies, contrasts, and deterministic schedule metadata |
+| [environment/](environment/) | Recorded dependency versions, local-path template, and external SVF snapshot reference |
+| [scripts/](scripts/) | Source verification and preparation of a fresh workspace |
+| [validation/](validation/README.md) | Independent SFA likelihood, boundary, derivative, prediction, and score comparisons |
+| [repairs/](repairs/module_repair_v1/README.md) | Isolated uniform FDH recomputation and controlled StoNED timeout retries |
+| [analysis/](analysis/README.md) | Repair-aware aggregate merging and recalculation of fixed Holm families |
+
+Only source and small design/environment metadata are included. Manuscripts,
+reviewer correspondence, fitted results, raw simulation arrays, publication
+tables and figures, logs, and installed third-party software are not included.
+
+## Start here
+
+From the repository root, using Python 3:
 
 ```sh
-python3 scripts/verify_code.py
-python3 scripts/prepare_workspace.py --output /path/to/a/new/workspace
+python3 -B scripts/verify_code.py
+python3 -B scripts/prepare_workspace.py --output /path/to/a/new/workspace
 ```
 
-The preparation command regenerates all 27,000 task records and EAT seeds and
-checks their exact hashes against the frozen schedules. It copies source/design
-into a **new directory outside this checkout**, without copying old approvals,
-runtime paths, outcomes, or launching any fits. The schedule includes 117
-condition-by-cohort settings (200 repetitions each, with 12 extended to 500).
-The 500-repetition windows include the first 200; they are not additional studies.
+These commands require only the Python standard library. Verification checks the
+file inventory, recorded source hashes, Python syntax, and frozen schedules.
+Preparation copies the production source/design to a new directory outside this
+checkout and regenerates all task records and EAT seeds with exact hash checks.
+Neither command installs software or runs an estimator.
 
-## Running estimators later
+For execution requirements, read [Running the code](docs/RUNNING.md). Full
+simulation requires compatible Python/R packages, solvers, the external SVF
+snapshot, and fresh runtime qualification. The original monitoring interface is
+macOS-specific, and this checkout does not automate every production qualification
+step. Validation and repair scripts require saved run inputs. Numerical replay
+requires saved aggregate inputs; the repository alone cannot reproduce the
+study's result tables.
 
-The original runtime needs compatible Python/R packages, solvers, and the
-authorized external SVF snapshot. Follow `docs/RUNNING.md` before invoking the
-runner. Monitoring currently uses macOS interfaces. Full production also needs
-fresh source/environment qualification and resource gates; preparation is not
-certification. No automatic simulation, dependency install, or production resume
-is configured in this repository.
+## Versions and attribution
 
-## Maintenance and release
+[Source provenance](SOURCE_PROVENANCE.json) records preserved files and explicit
+adaptations. Production code and post-run repairs remain separate: adopting a
+repair does not rewrite the original execution record. See the
+[maintenance policy](docs/MAINTENANCE.md) for versioning and file scope.
 
-Scientific source and retained design files initially match the local frozen
-production code byte-for-byte; see `SOURCE_PROVENANCE.json`. Generated schedules
-are reconstructed instead of committed as multi-megabyte repeated records.
-`TRACKED_FILES.txt` and the default-deny `.gitignore` define the intended tracked
-inventory. Before adding a file, update that inventory deliberately and run the
-verification command. Original results must never be silently overwritten after
-an estimator, seed, scoring rule, or numerical policy changes.
-
-See `docs/MAINTENANCE.md` for versioning and `LICENSE` for the existing project
-terms. A software license does not imply current public availability. No
-manuscript or author-response material should be added here.
-
-## Isolated module repair
-
-`repairs/module_repair_v1/` contains the local-workspace repair pipeline for uniform
-direct FDH evaluation and controlled StoNED timeout retries. It requires preserved
-local inputs and writes a separate result layer. See its README before staging it.
-No repaired outcomes, manuscript changes, or reports are stored in this repository.
+When referring to this code, identify Choonjoo Lee, this repository's title and
+URL, and the exact commit used. Author-written software is covered by the MIT
+License; project-generated documentation and design records use CC BY 4.0.
+See [LICENSE](LICENSE) for the full terms. Third-party packages retain their own
+licenses.

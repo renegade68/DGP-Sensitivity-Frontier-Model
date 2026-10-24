@@ -1,8 +1,10 @@
 # Execution boundary
 
-Only source verification and workspace preparation are ready-to-run entry points
-for this minimal checkout. Scientific routines in `tools/` preserve their original
-runtime interface; do not invoke them against the checkout itself.
+Source verification and workspace preparation run from a clone without saved
+results or third-party dependencies. [Numerical replay](../analysis/README.md)
+also has a command-line entry point, but needs saved aggregate inputs and SciPy.
+Scientific routines in `tools/` preserve their original runtime interface; do not
+invoke them against the checkout itself.
 
 1. Run `scripts/prepare_workspace.py --output NEW_DIRECTORY` from this checkout.
 2. Reconstruct a compatible recorded environment using
@@ -27,7 +29,11 @@ replication archive has the more extensive preparation and validation material.
 `tools/first_batch.py`, `finalize.py`, and `aggregate.py` consume actual run records;
 they do not supply missing records or certify a fresh environment on their own.
 
-FDH fast-route exclusions and StoNED timeouts are recorded outcomes, not empty
-slots to patch selectively. A changed estimator requires a new implementation
-version and uniformly applied comparison. Qualified SFA boundaries do not imply
-statistical identification or global optimality of every fitted result.
+The [repair workflow](../repairs/module_repair_v1/README.md) applies direct FDH
+evaluation uniformly and retries the two StoNED timeouts with a disclosed outer
+time cap. Original exclusions and timeouts remain recorded; repairs are a separate
+layer. The [SFA diagnostics](../validation/README.md) compare likelihoods,
+derivatives, boundary subproblems, predictions, and scores with independent
+calculations and package results. They require saved inputs and a separately
+staged workspace. Qualified boundaries do not imply statistical identification
+or global optimality of every fitted result.

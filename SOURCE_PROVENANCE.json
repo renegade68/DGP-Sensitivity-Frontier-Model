@@ -1,5 +1,5 @@
 {
-  "source_release": "Local integrated replication archive v7, 25 October 2026",
+  "source_release": "Frozen production implementation and post-run validation/repair sources, 25 October 2026",
   "copied_files": {
     "tools/aggregate.py": {
       "source": "revision/replication_archive_v7/current/production/tools/aggregate.py",
@@ -165,9 +165,77 @@
       "source": "revision/replication_archive_v7/current/production/environment_record/python_core_requirements.txt",
       "sha256": "0a3f660ff695c64856b92952bb206f93b34c4a4c50f7b21dd325d90ef40b22cc"
     },
-    "LICENSE": {
-      "source": "revision/replication_archive_v7/LICENSE",
-      "sha256": "d6713eea80365027e3adba81b0c509b9fa541616db5a4351b3129d3398e983be"
+    "validation/sfa_independent_validation_20261024/validate.py": {
+      "source": "revision/sfa_independent_validation_20261024/validate.py",
+      "sha256": "9f61f157045bcb0505d87a79cb134f099f4062f4b87a23be2a7ce810c33b3ce4"
+    },
+    "validation/sfa_independent_validation_20261024/check_gradients.py": {
+      "source": "revision/sfa_independent_validation_20261024/check_gradients.py",
+      "sha256": "2828e0bd9da4ba5af9e4ee7eb2573d4fa3386d452232a187150adc4ed09e26c7"
+    },
+    "validation/sfa_independent_validation_20261024/check_boundary.py": {
+      "source": "revision/sfa_independent_validation_20261024/check_boundary.py",
+      "sha256": "5a03750b484c4ce347fa1c80257562718061fd9e0daaeb72b63efbe1af28043c"
+    },
+    "validation/sfa_independent_validation_20261024/compare_R.R": {
+      "source": "revision/sfa_independent_validation_20261024/compare_R.R",
+      "sha256": "b5466a2d597eb29c250216a8e79ef95743fb3b4b698373c2e6a96c57360fa046"
+    },
+    "validation/sfa_independent_validation_20261024/extract_R.R": {
+      "source": "revision/sfa_independent_validation_20261024/extract_R.R",
+      "sha256": "dadbe7119ae74e8bccc45f3f6402e0b20c861b502ae3c5770b58e6c00fd97f9b"
+    },
+    "validation/sfa_independent_validation_20261024/summarize.py": {
+      "source": "revision/sfa_independent_validation_20261024/summarize.py",
+      "sha256": "6f93565541dd059e39b4faf719e605bc85d4d08aadb6d21d96d5b7f2c0b83a5d"
+    },
+    "validation/sfa_prediction_validation_20261024/compare.py": {
+      "source": "revision/sfa_prediction_validation_20261024/compare.py",
+      "sha256": "498b49e0aff6b92d24bcbd7231854af40310746555bf98edf4b851a937e6176c"
+    },
+    "validation/sfa_prediction_validation_20261024/native_scores.R": {
+      "source": "revision/sfa_prediction_validation_20261024/native_scores.R",
+      "sha256": "e26e04b54de01c1b08b1ef7bd4c4c3050241fdc9003ae943f4402f5a1b20a94e"
+    },
+    "validation/sfa_prediction_validation_20261024/summarize.py": {
+      "source": "revision/sfa_prediction_validation_20261024/summarize.py",
+      "sha256": "d5a8d2ec1d7e79da97ef046e7859ecafcd84285f2b7451121cf25331e4cd43e0"
+    },
+    "repairs/module_repair_v1/analyze_impact.py": {
+      "source": "revision/module_repair_v1_20261025/analyze_impact.py",
+      "sha256": "0da1779ec99b64f316a9d0688f9694d5f287feca6852655ef0460509841ed449"
+    },
+    "repairs/module_repair_v1/fdh_recompute.py": {
+      "source": "revision/module_repair_v1_20261025/fdh_recompute.py",
+      "sha256": "89c98768f66ae77b46d28efd970978211193dc05c1dceba01da2b973b5efa389"
+    },
+    "repairs/module_repair_v1/verify_stoned.py": {
+      "source": "revision/module_repair_v1_20261025/verify_stoned.py",
+      "sha256": "d40b22f2cf33d44042bfad9e511882319f9c14838011a97d93bbce2cae690282"
+    },
+    "repairs/module_repair_v1/verify_runtime.py": {
+      "source": "revision/module_repair_v1_20261025/verify_runtime.py",
+      "sha256": "c30b2aaa3e422c060c9e369932e72efdd7e9e40f99acc1bdc514c6532d2f4cba"
+    },
+    "repairs/module_repair_v1/retry_stoned.py": {
+      "source": "revision/module_repair_v1_20261025/retry_stoned.py",
+      "sha256": "2bee8411cea778ffec48551e328d45940c6b30572600e0049021dd16f26a758c"
+    },
+    "repairs/module_repair_v1/export_inputs.R": {
+      "source": "revision/module_repair_v1_20261025/export_inputs.R",
+      "sha256": "55238aa0d0d1223f511dc10939afc2a295b412dea832166d1cda6a1c3965ccb8"
+    },
+    "repairs/module_repair_v1/verify_preservation.py": {
+      "source": "revision/module_repair_v1_20261025/verify_preservation.py",
+      "sha256": "e0769bb73c0c125d9a709357713fade3b77fcaa9401802aa7763e10b078115b2"
+    },
+    "repairs/module_repair_v1/aggregate_repair.py": {
+      "source": "revision/module_repair_v1_20261025/aggregate_repair.py",
+      "sha256": "414c60a63d0261b2bd12632065b7550190750e492a8d9d0301207a7701a35f3e"
+    },
+    "repairs/module_repair_v1/prepare.py": {
+      "source": "revision/module_repair_v1_20261025/prepare.py",
+      "sha256": "f15d68c9c3a9916f6b1c8e8a37560f528958fc1626496657ff8d3989814b2630"
     }
   },
   "omitted_controllers": [
@@ -176,7 +244,21 @@
     "replay44.py",
     "validate.py"
   ],
-  "scientific_changes": "Baseline copied files remain unchanged. The optional repairs/module_repair_v1 workflow is a separate post-run repair layer; it does not replace frozen production results or scientific source.",
-  "scope": "Current ten-method code only; no publication files, fitted outcomes, or historical replication component",
-  "repair_workflow": "repairs/module_repair_v1/README.md"
+  "scientific_changes": "Production, retained design, repair, and SFA diagnostic sources are byte-preserved. The numerical merge/Holm body is unchanged from the repair-aware replay. Interface changes are listed in adapted_files; no new estimator fits or replacement of frozen results.",
+  "scope": "Ten-method scientific code, frozen design, SFA diagnostics, isolated repairs, and repair-aware numerical replay; no manuscripts, fitted outcomes, or historical replication component.",
+  "repair_workflow": "repairs/module_repair_v1/README.md",
+  "adapted_files": {
+    "analysis/merge_repair.py": {
+      "source": "revision/replication_archive_v8/current/replay_repair.py",
+      "source_sha256": "bf03b503574e59e6232ed2b42dbc5e0dc9ae2d7bf5d578e7795e9194e8063e74",
+      "sha256": "3d32f9cbbb518619ba1e938e08cba735026b7d4baaa01a184b0813d81fc1f8a3",
+      "changes": "Extract numerical merge and Holm computation unchanged; remove unused publication helpers; add explicit input/output arguments, required-file checks, output isolation, assertion guard, and input hash report."
+    },
+    "LICENSE": {
+      "source": "revision/replication_archive_v7/LICENSE",
+      "source_sha256": "d6713eea80365027e3adba81b0c509b9fa541616db5a4351b3129d3398e983be",
+      "sha256": "c7f2494a52c9ed5adb491394ccfbef8a914835fcb11b78314445d2affe7e5ca8",
+      "changes": "Replace an archive-only FEAR_ACCESS.md pointer with the repository execution guide; license grants unchanged."
+    }
+  }
 }

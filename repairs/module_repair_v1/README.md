@@ -39,3 +39,7 @@ exclusions and timeouts remain in their historical records. A paper must describ
 implementation and retry changes explicitly if adopting the new results. Preserve
 all differences, including auxiliary rank/equality effects; agreement of main
 frontier comparisons does not establish that every statistic is unchanged.
+
+To merge validated combined overlays into saved aggregate extracts and recompute
+the fixed Holm families, see [numerical replay](../../analysis/README.md).
+This additional step performs no fitting and uses a new output directory.

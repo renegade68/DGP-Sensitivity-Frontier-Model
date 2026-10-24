@@ -3,6 +3,8 @@ LICENSE
 README.md
 SOURCE_PROVENANCE.json
 TRACKED_FILES.txt
+analysis/README.md
+analysis/merge_repair.py
 design/ANALYSIS.json
 design/ANALYSIS_CONTRACT.txt
 design/CONTRASTS.json
@@ -62,3 +64,14 @@ tools/svf_math.py
 tools/svf_workspace.py
 tools/tables.py
 tools/worker.py
+validation/README.md
+validation/seal_validation.py
+validation/sfa_independent_validation_20261024/check_boundary.py
+validation/sfa_independent_validation_20261024/check_gradients.py
+validation/sfa_independent_validation_20261024/compare_R.R
+validation/sfa_independent_validation_20261024/extract_R.R
+validation/sfa_independent_validation_20261024/summarize.py
+validation/sfa_independent_validation_20261024/validate.py
+validation/sfa_prediction_validation_20261024/compare.py
+validation/sfa_prediction_validation_20261024/native_scores.R
+validation/sfa_prediction_validation_20261024/summarize.py

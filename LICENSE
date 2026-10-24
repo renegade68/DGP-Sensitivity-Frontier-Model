@@ -44,5 +44,5 @@ the version of the replication archive used.
 This notice does not relicense third-party software, package metadata,
 templates, or other material. Those items remain governed by their respective
 licenses. In particular, FEAR 5.0 is not included in the replication archive
-and is not covered by either license above. See FEAR_ACCESS.md for the lawful
-access procedure and the applicable restrictions.
+and is not covered by either license above. FEAR is not required by the current
+ten-method workflow. See docs/RUNNING.md for external dependency information.

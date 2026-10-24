@@ -23,7 +23,8 @@ def verify():
         if tracked - allowed:
             raise ValueError('Out-of-scope files tracked: ' + repr(sorted(tracked - allowed)))
     provenance = json.loads((ROOT / 'SOURCE_PROVENANCE.json').read_text())
-    for name, record in provenance['copied_files'].items():
+    source_records = {**provenance['copied_files'], **provenance.get('adapted_files', {})}
+    for name, record in source_records.items():
         if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != record['sha256']:
             raise ValueError('Preserved source changed; version and validate deliberately: ' + name)
     python_files = [ROOT / n for n in allowed if n.endswith('.py')]
@@ -38,6 +39,7 @@ def verify():
         raise ValueError('Precision-extension scope differs')
     return {'status': 'PASS', 'files': len(allowed), 'python_syntax_files': len(python_files),
             'unchanged_source_files': len(provenance['copied_files']),
+            'adapted_source_files': len(provenance.get('adapted_files', {})),
             'conditions': len(cells), 'tasks': len(tasks), 'generated_schedules_exact': True,
             'estimator_fits': 0}
 
