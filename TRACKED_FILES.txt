@@ -24,6 +24,10 @@ environment/LOCAL.template.json
 environment/RECORDED_VERSIONS.json
 environment/SVF_EXTERNAL_SOURCE.json
 environment/python_core_requirements.txt
+examples/PROTOCOL.json
+examples/README.md
+examples/requirements.txt
+examples/reviewer_check.py
 repairs/module_repair_v1/README.md
 repairs/module_repair_v1/aggregate_repair.py
 repairs/module_repair_v1/analyze_impact.py

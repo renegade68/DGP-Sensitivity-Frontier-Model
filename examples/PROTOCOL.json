@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "cases": [
+    "U1_D04_r0001",
+    "U1_D06_r0001",
+    "U1_D10_r0001",
+    "U1_D16_r0001",
+    "U1_D20_r0001",
+    "U1_D36_r0001"
+  ],
+  "selection": "Fixed first replication of six named settings chosen by DGP features: CD/EXP noise-dominant and inefficiency-dominant, CD/HN noise-dominant, CD/pure noise, CES/EXP noise-dominant, PWL/EXP noise-dominant. No selection by loss, fit status or whether checks pass.",
+  "models": [
+    "FDH",
+    "SFA_CD_HN",
+    "SFA_CD_EXP",
+    "SFA_TL_HN",
+    "SFA_TL_EXP"
+  ],
+  "scope": "Procedural subset check, not a new Monte Carlo ranking or all-ten-method replication. SFA optimization is rerun using all frozen adapter rules and archived raw sfaR baseline starting values; the original R baseline fitting is not rerun. FDH uses exact archived R-read input doubles.",
+  "tolerances": {
+    "loglik_per_observation_abs": 1e-07,
+    "frontier_max_relative": 1e-05,
+    "native_score_max_abs": 1e-06
+  },
+  "failure_policy": "Retain every case, status and discrepancy. Return a nonzero code for review-required results; do not replace cases or relax tolerances after inspecting outputs.",
+  "estimation_truth_input": false
+}

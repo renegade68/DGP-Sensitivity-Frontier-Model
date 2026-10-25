@@ -78,3 +78,7 @@
 !/validation/sfa_prediction_validation_20261024/compare.py
 !/validation/sfa_prediction_validation_20261024/native_scores.R
 !/validation/sfa_prediction_validation_20261024/summarize.py
+!/examples/README.md
+!/examples/PROTOCOL.json
+!/examples/requirements.txt
+!/examples/reviewer_check.py

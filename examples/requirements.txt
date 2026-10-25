@@ -1,0 +1,5 @@
+# Versions used for the bounded example, Python 3.13.13 on macOS arm64.
+# Other platforms need compatible wheels and may have floating-point differences.
+numpy==2.5.2
+scipy==1.18.1
+clarabel==0.11.1

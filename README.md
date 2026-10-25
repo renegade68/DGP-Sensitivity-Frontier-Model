@@ -42,6 +42,7 @@ equivalent predictions in every case.
 | [validation/](validation/README.md) | Independent SFA likelihood, boundary, derivative, prediction, and score comparisons |
 | [repairs/](repairs/module_repair_v1/README.md) | Isolated uniform FDH recomputation and controlled StoNED timeout retries |
 | [analysis/](analysis/README.md) | Repair-aware aggregate merging and recalculation of fixed Holm families |
+| [examples/](examples/README.md) | Bounded reviewer fitting check and saved-summary replay instructions; requires a separate input packet |
 
 Only source and small design/environment metadata are included. Manuscripts,
 reviewer correspondence, fitted results, raw simulation arrays, publication
@@ -69,6 +70,13 @@ macOS-specific, and this checkout does not automate every production qualificati
 step. Validation and repair scripts require saved run inputs. Numerical replay
 requires saved aggregate inputs; the repository alone cannot reproduce the
 study's result tables.
+
+For a review that does not require rerunning the entire experiment, see
+[Reviewer checks](examples/README.md). The separate review packet supports
+saved-summary reconstruction and a fixed six-dataset FDH/SFA example. The latter
+performs 24 fresh SFA optimizations using archived baseline starting values and
+six direct FDH calculations. Its scope and tolerances are explicit; it is not
+a new Monte Carlo ranking or an all-method replication.
 
 ## Versions and attribution
 
